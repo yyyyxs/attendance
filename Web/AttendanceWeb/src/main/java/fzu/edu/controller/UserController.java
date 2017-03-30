@@ -32,8 +32,8 @@ public class UserController {
 		UserServiceI = userServiceI;
 	}
 
-	@RequestMapping("/showUser")  
-	public String showUser(int id,HttpServletRequest request){
+	@RequestMapping("/{id}/showUser")  
+	public String showUser(@PathVariable int id,HttpServletRequest request){
 		User user = UserServiceI.getUserById(id);
 		request.setAttribute("user", user);
 		return "showUser";
