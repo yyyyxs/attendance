@@ -114,4 +114,14 @@
       del_flag = #{delFlag,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  
+  <select id="getAll" resultMap="BaseResultMap">
+  select * from sys_user
+  </select>
+  
+  <!-- 返回不同角色列表 -->
+  <select id="getListByRole" parameterType="string" resultMap="BaseResultMap">
+  select * from sys_user where user_roleId = #{userRoleid,jdbcType=VARCHAR}
+  </select>
+  
 </mapper>

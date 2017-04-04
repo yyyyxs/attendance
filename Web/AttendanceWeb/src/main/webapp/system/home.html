@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<title>考勤管理系统</title>
+
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/css/home.css">
+<link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+<script src="../assets/js/iconfont.js"></script>
+</head>
+<body ng-app='routingDemoApp'>
+	<div class="page-container">
+		<div class="sidebar-menu">
+			<!-- 左侧菜单 -->
+			<div class="sidebar-menu-inner">
+				<header class="logo-env"> </header>
+				</div>
+			
+<div class="ul1"> <a href="#afficheMeun" class="nav-header menu-first collapsed " data-toggle="collapse"><svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-gonggaolan"></use></svg>公告栏</a></span>
+    <ul id="afficheMeun" class="nav nav-list collapse menu-second ">
+       <li><a href="#/afficheList"> <span class="title">公告列表</span>
+
+ </ul>
+</div>
+ <div class="ul1"> <a href="#userMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-yonghuguanli"></use></svg> 用户管理</a></span>
+    <ul id="userMeun" class="nav nav-list collapse menu-second">
+      <li><a href="#/teacherM"> <span class="title">教师用户管理</span></a></li>
+	<li><a href="#/studentM"> <span class="title">学生用户管理</span>
+</a></li>
+ </ul>
+</div>
+  <div class="ul1"> <a href="#studentMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-xueshengguanli"></use></svg> 学生管理</a></span>
+    <ul id="studentMeun" class="nav nav-list collapse menu-second">
+    <li><a href="#/studentList"> <span class="title">学生列表</span></a></li>
+	<li><a href="#/studentAdd"> <span class="title">添加学生</span></a></li>
+ </ul>
+</div>    
+ <div class="ul1"> <a href="#seatMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-zuowei"></use></svg> 座位管理</a></span>
+    <ul id="seatMeun" class="nav nav-list collapse menu-second">
+    <li><a href="#/seatList"> <span class="title">座位列表</span></a></li>
+							<li><a href="#/seatAdd"> <span class="title">添加座位</span></a></li>
+</div> 
+ <div class="ul1"> <a href="#classMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-kechengguanli-copy"></use></svg> 课程管理</a></span>
+    <ul id="classMeun" class="nav nav-list collapse menu-second">
+    	<li><a href="#/courseList"> <span class="title">课程列表</span>
+							</a></li>
+							<li><a href="#/courseAdd"> <span class="title">添加课程</span>
+							</a></li>
+</div> 					
+<div class="ul1"> <a href="#signMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-attendance-icon-copy"></use></svg> 考勤管理</a></span>
+    <ul id="signMeun" class="nav nav-list collapse menu-second">
+    	<li><a href="#/signIn"> <span class="title">到课情况</span>
+							</a></li>
+							<li><a href="#/checkOrLeave"> <span class="title">签到/请假</span>
+							</a></li>
+							<li><a href="#/leaveM"> <span class="title">请假审批</span>
+							</a></li>
+</div> 		
+<div class="ul1"> <a href="#systemMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-xitongguanli"></use></svg> 系统管理</a></span>
+    <ul id="systemMeun" class="nav nav-list collapse menu-second">
+					<li><a href="#/roleM"> <span class="title">角色管理</span>
+</div> 				
+<div class="ul1"> <a href="#personInfo" class="nav-header menu-first collapsed" data-toggle="collapse"><svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-gerenxinxi"></use></svg>个人信息</a></span>
+  
+</div> 							
+<div class="ul1"> <a href="#relativeInfo" class="nav-header menu-first collapsed" data-toggle="collapse"><svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-xiangguan"></use></svg>相关信息</a></span>
+  
+</div> 						
+		</div>
+		<div class="main-content">
+			<nav class="navbar user-info-navbar" role="navigation">
+			
+				<svg class="icon3 " aria-hidden="true">
+								<use xlink:href="#icon-yonghu-copy"></use></svg> 
+				
+				<ul class="nav navbar-nav navbar-right">
+			
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown"> 160327050<b class="caret"></b>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">修改密码</a></li>
+
+							<li class="divider"></li>
+							<li><a href="#">登出</a></li>
+						</ul></li>
+				</ul>
+			</nav>
+				 <div ng-view></div>
+	
+		</div>
+		
+	</div>
+
+	<!-- Bottom Scripts -->
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+	<!-- JavaScripts initializations and stuff -->
+	
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-route/angular-route.js"></script>
+		
+	
+		 <script>
+         angular.module('routingDemoApp',['ngRoute'])
+         .config(['$routeProvider', function($routeProvider){
+             $routeProvider
+         
+             .when('/afficheList',{template:'这是公告列表'})
+             .when('/teacherM',{template:'这是教师管理'})
+             .when('/studentM',{template:'这是学生管理'})
+             .when('/studentList',{templateUrl:'studentlist.html'})
+              .when('/studentAdd',{templateUrl:'studentAdd.html'})
+             .when('/seatList',{template:'这是座位列表'})
+              .when('/seatAdd',{template:'这是座位添加'})
+             .when('/courseList',{template:'这是课程列表'})
+              .when('/courseAdd',{template:'这是课程添加'})
+             .when('/signIn',{template:'这是到课情况'})
+              .when('/checkOrLeave',{template:'这是签到/请假'})
+             .when('/leaveM',{template:'这是请假管理'})
+             .when('/roleM',{template:'这是角色管理信息'})
+              .when('/personInfo',{template:'这是个人信息'})
+             .when('/relativeInfo',{template:'这是相关信息'})
+             .otherwise({redirectTo:'/'});
+         }]);
+     </script>
+     
+
+</body>
+</html>

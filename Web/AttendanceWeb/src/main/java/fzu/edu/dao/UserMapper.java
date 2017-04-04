@@ -1,5 +1,7 @@
 package fzu.edu.dao;
 
+import java.util.List;
+
 import fzu.edu.model.User;
 
 public interface UserMapper {
@@ -14,4 +16,8 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+    
+    List<User> getAll();
+    
+    List<User> getListByRole(String roleId);
 }

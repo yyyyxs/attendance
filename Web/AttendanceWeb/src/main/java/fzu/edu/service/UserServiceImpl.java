@@ -18,18 +18,29 @@ import java.util.List;
 public class UserServiceImpl implements UserServiceI {
 
 	private UserMapper Usermapper;
+	
+	public UserMapper getUsermapper() {
+		return Usermapper;
+	}
+	@Autowired
+	public void setUsermapper(UserMapper usermapper) {
+		Usermapper = usermapper;
+	}
+	
 	@Override
 	public User getUserById(int id) {
 		return Usermapper.selectByPrimaryKey(id);
 	}
 
-	public UserMapper getUsermapper() {
-		return Usermapper;
+	@Override
+	public List<User> getAll() {
+		return Usermapper.getAll();
+	}
+
+	@Override
+	public List<User> getListByRole(String roleId) {
+		return Usermapper.getListByRole(roleId);
 	}
 	
-	@Autowired
-	public void setUsermapper(UserMapper usermapper) {
-		Usermapper = usermapper;
-	}
 
 }
