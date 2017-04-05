@@ -41,6 +41,7 @@
 
 body {
   	background:url(../images/back.jpg);
+  	z-index:-100;
 }
 
 a {

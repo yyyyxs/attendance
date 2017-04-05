@@ -1,4 +1,9 @@
 @CHARSET "UTF-8";
+.main_controller{
+	width: 1000px; 
+	margin: 0 auto;
+}
+
 .smart-green {
 width: 450px;
 background: #ffffff;

@@ -5,19 +5,22 @@
 <title>studentlist</title>
 <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="../assets/css/home.css">
+
+<link rel="stylesheet" href="../assets/css/list.css">
+<link rel="stylesheet" href="../assets/css/add.css">
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../assets/js/iconfont.js"></script>
 </head>
 <body>
-<div style="width: 1000px; margin: 0 auto;">
-<table class="table table-bordered table-hover" style="background-color: #ffffff;">
+<div class="main_controller">
+
+<table class="table table-bordered table-hover table-striped">
 	<thead>
 		<tr>
-			<th style="width:100px;">学号</th>
-			<th style="width:100px;">学生姓名</th>
-			<th style="width:100px;">联系方式</th>
-			<th style="width:150px;">操作</th>
+			<th>学号</th>
+			<th >学生姓名</th>
+			<th>联系方式</th>
+			<th >操作</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -25,60 +28,38 @@
 				<td>160327050</td>
 				<td>项滔</td>
 				<td>18250152008</td>
-				<td>
-					<div class="btn-group" roleid="1" >
+					<td>
+						<div class="space-4"></div>
+						<div class="clearfix form-actions" style="margin-bottom: 0;">
+							<div class="center">
+								<button class="btn btn-success" data-toggle="modal" data-target="#myModal" type="button">
+									详情</button>
+								&nbsp;
+								<button class="btn btn-info" type="submit" id="">修改</button>
+								&nbsp;
+								<button class="btn btn-danger" type="submit" id="">删除</button>
+							</div>
+						</div>
 
-						<button class="btn btn-xs btn-success" style="margin: 0;margin-left: 30px;"
-							id="modRoleBtn"
-							onclick="">
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-xiangqing"></use></svg>
-						</button>
+					</td>
 
-						<button class="btn btn-xs btn-info" style="margin: 0;;margin-left: 20px;"
-							id="modRoleBtn"
-							onclick="">
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-modify-copy"></use></svg>
-						</button>
-
-						<button class="btn btn-xs btn-danger"
-							style="margin: 0; margin-left: 20px;" id="delRoleBtn">
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-shanchu"></use></svg>
-						</button>
-
-					</div>
-				</td>
-
-			</tr>
+				</tr>
 			<tr>
-					<td>160327050</td>
+				<td>160327050</td>
 				<td>项滔</td>
 				<td>18250152008</td>
 				<td>
-							<div class="btn-group" roleid="1" >
-						<button class="btn btn-xs btn-success" style="margin: 0;margin-left: 30px;"
-							id="modRoleBtn"
-							onclick="">
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-xiangqing"></use></svg>
-						</button>
-
-						<button class="btn btn-xs btn-info" style="margin: 0;;margin-left: 20px;"
-							id="modRoleBtn"
-							onclick="">
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-modify-copy"></use></svg>
-						</button>
-
-						<button class="btn btn-xs btn-danger"
-							style="margin: 0; margin-left: 20px;" id="delRoleBtn">
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-shanchu"></use></svg>
-						</button>
-
-					</div>
+							<div class="space-4"></div>
+						<div class="clearfix form-actions" style="margin-bottom: 0;">
+							<div class="center">
+								<button class="btn btn-success" type="button" onclick="">
+									详情</button>
+								&nbsp;
+								<button class="btn btn-info" type="submit" id="">修改</button>
+								&nbsp;
+								<button class="btn btn-danger" type="submit" id="">删除</button>
+							</div>
+						</div>
 				</td>
 
 			</tr>
@@ -87,34 +68,60 @@
 				<td>项滔</td>
 				<td>18250152008</td>
 				<td>
-							<div class="btn-group" roleid="1" >
-						<button class="btn btn-xs btn-success" style="margin: 0;margin-left: 30px;"
-							id="modRoleBtn"
-							onclick="">
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-xiangqing"></use></svg>
-						</button>
-
-						<button class="btn btn-xs btn-info" style="margin: 0;;margin-left: 20px;"
-							id="modRoleBtn"
-							onclick="">
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-modify-copy"></use></svg>
-						</button>
-
-						<button class="btn btn-xs btn-danger"
-							style="margin: 0; margin-left: 20px;" id="delRoleBtn">
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-shanchu"></use></svg>
-						</button>
-
-					</div>
+							<div class="space-4"></div>
+						<div class="clearfix form-actions" style="margin-bottom: 0;">
+							<div class="center">
+								<button class="btn btn-success" type="button" onclick="">
+									详情</button>
+								&nbsp;
+								<button class="btn btn-info" type="submit" id="">修改</button>
+								&nbsp;
+								<button class="btn btn-danger" type="submit" id="">删除</button>
+							</div>
+						</div>
 				</td>
 
 			</tr>
+		
 		</tbody>
+	
 </table>
-</div>	
 
+
+<!-- <!-- 模态框（Modal）
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					模态框（Modal）标题
+				</h4>
+			</div>
+			<div class="modal-body">
+				在这里添加一些文本
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<button type="button" class="btn btn-primary">
+					提交更改
+				</button>
+			</div>
+		</div>/.modal-content
+	</div>/.modal
+</div> 
+
+<script>
+$(function () { $('#myModal').modal({
+	keyboard: true
+	show:false;
+})});
+</script>
+
+-->
+</div>	
 </body>
 </html>
