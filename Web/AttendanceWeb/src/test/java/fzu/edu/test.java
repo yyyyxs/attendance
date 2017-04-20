@@ -19,12 +19,13 @@ import fzu.edu.service.UserServiceI;
  *
  * 2017年3月30日
  */
-public class test {
+/*public class test {
 	@Test
-	public void test1(){
+public void test1(){
 		ApplicationContext xtt = new ClassPathXmlApplicationContext(new String[]{"spring.xml","spring-mybatis.xml"});
 		UserServiceI userServiceI = (UserServiceI)xtt.getBean("userService");
-		List<User> user = userServiceI.getListByRole("1");
+		User user = userServiceI.CheckLogin("admin","admin");
 		System.out.println(JSON.toJSONString(user));
 	}
 }
+*/

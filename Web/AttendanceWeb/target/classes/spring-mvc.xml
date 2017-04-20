@@ -5,7 +5,9 @@ http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context-4.3.xsd 
 http://www.springframework.org/schema/mvc 
 http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
-
+	<mvc:annotation-driven />    
+    <mvc:resources location="/webapp/assets/"  mapping="/assets/**" cache-period="2592000"/> 
+	<mvc:resources location="/webapp/bower_components/"  mapping="/bower_components/**" cache-period="2592000"/>
 	<!-- 自动扫描controller包下的所有类，使其认为spring mvc的控制器 -->
 	<context:component-scan base-package="fzu.edu.controller" />
 
@@ -14,6 +16,8 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 		<property name="supportedMediaTypes">
 			<list>
 				<value>text/html;charset=UTF-8</value>
+				 <value>text/json;charset=UTF-8</value>    
+                <value>application/json;charset=UTF-8</value>   
 			</list>
 		</property>
 	</bean>
@@ -29,6 +33,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
 	<!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/" p:suffix=".jsp" />
+	
 
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="defaultEncoding">

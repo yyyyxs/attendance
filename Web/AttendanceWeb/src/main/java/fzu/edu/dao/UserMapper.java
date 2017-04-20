@@ -17,7 +17,11 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
     
+    User getUserByNum(String num);
+    
     List<User> getAll();
     
     List<User> getListByRole(String roleId);
+    
+  
 }

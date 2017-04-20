@@ -16,5 +16,11 @@ public interface UserServiceI {
 	public List<User> getAll();
 
 	public List<User> getListByRole(String roleId);
+	
+	public int CheckLogin(String num,String password);
+	
+	public User findByNum(String num);
+	
+	public int StudentAdd(String num,String name,String tel,String passwd);
 }
 

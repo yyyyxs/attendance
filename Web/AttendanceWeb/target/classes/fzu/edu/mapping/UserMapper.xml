@@ -24,10 +24,10 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="fzu.edu.model.User">
-    insert into sys_user (id, user_num, user_passwd, 
+    insert into sys_user (user_num, user_passwd, 
       user_name, user_tel, user_roleId, 
       del_flag)
-    values (#{id,jdbcType=INTEGER}, #{userNum,jdbcType=VARCHAR}, #{userPasswd,jdbcType=VARCHAR}, 
+    values ( #{userNum,jdbcType=VARCHAR}, #{userPasswd,jdbcType=VARCHAR}, 
       #{userName,jdbcType=VARCHAR}, #{userTel,jdbcType=VARCHAR}, #{userRoleid,jdbcType=VARCHAR}, 
       #{delFlag,jdbcType=INTEGER})
   </insert>
@@ -124,4 +124,7 @@
   select * from sys_user where user_roleId = #{userRoleid,jdbcType=VARCHAR}
   </select>
   
+  <select id="getUserByNum" parameterType="string" resultMap="BaseResultMap">
+  select * from sys_user where user_num = #{userNum,jdbcType=VARCHAR}
+  </select>
 </mapper>
