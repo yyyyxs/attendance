@@ -1,0 +1,491 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>农户统计 - 特殊家庭</title>
+
+        <meta name="description" content="Dynamic tables and grids using jqGrid plugin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <%--导入头部css--%>
+        <%@include file="/WEB-INF/jsp/common/import-css.jsp" %>
+        <!-- page specific plugin styles -->
+
+        <link rel="stylesheet" href="${ctx}/assets/css/jquery-ui-1.10.3.full.min.css" />
+        <link rel="stylesheet" href="${ctx}/assets/css/datepicker.css" />
+        <link rel="stylesheet" href="${ctx}/assets/css/ui.jqgrid.css" />
+
+        <!-- ace styles 必须保留！要覆盖ui.jqgrid.css的样式 -->
+        <link rel="stylesheet" href="${ctx}/assets/css/ace.min.css" />
+    </head>
+
+    <body>
+        <%--导入头部banner--%>
+        <%@include file="/WEB-INF/jsp/common/header.jsp" %>
+
+        <div class="main-container" id="main-container">
+            <script type="text/javascript">
+                try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+            </script>
+
+            <div class="main-container-inner">
+                <%--导入左边导航菜单--%>
+                <%@include file="/WEB-INF/jsp/common/sidebar.jsp" %>
+
+                <div class="main-content">
+                    <div class="breadcrumbs" id="breadcrumbs">
+                        <script type="text/javascript">
+                            try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+                        </script>
+
+                        <ul class="breadcrumb">
+                            <li>
+                                <i class="icon-home home-icon"></i>
+                                <a href="${ctx}/"><spring:message code="global.homepage" /></a>
+                            </li>
+
+                            <li>
+                                <a> 农户统计</a>
+                            </li>
+                            <li class="active"> 特殊家庭</li>
+                        </ul><!-- .breadcrumb -->
+                    </div>
+                    <div class="page-content">
+
+                        <div class="row">
+                            <div class="space-10"></div>
+
+                            <table width="100%" style="border: 1px dotted #e2e2e2">
+                                <tbody>
+                                    <tr>
+                                        <td width="15%"></td>
+                                        <td>
+                                            <div style="padding-top:5px;">
+                                                <label>
+                                                    <input name="specialfamily" class="ace ace-checkbox-1" type="checkbox"
+                                                           id="t0" value="0">
+                                                    <span class="lbl">留守家庭</span>
+                                                </label>
+                                            </div></td>
+                                        <td>
+                                            <div style="padding-top:5px;">
+                                                <label>
+                                                    <input name="specialfamily" class="ace ace-checkbox-1" type="checkbox"
+                                                           id="t1" value="1">
+                                                    <span class="lbl">五保户</span>
+                                                </label>
+                                            </div></td>
+                                        <td>
+                                            <div style="padding-top:5px;">
+                                                <label>
+                                                    <input name="specialfamily" class="ace ace-checkbox-1" type="checkbox"
+                                                           id="t2" value="2">
+                                                    <span class="lbl">低保户</span>
+                                                </label>
+                                            </div></td>
+                                        <td>
+                                            <div style="padding-top:5px;">
+                                                <label>
+                                                    <input name="specialfamily" class="ace ace-checkbox-1" type="checkbox"
+                                                           id="t3" value="3">
+                                                    <span class="lbl">困难家庭</span>
+                                                </label>
+                                            </div></td>
+                                        <td>
+                                            <div style="padding-top:5px;">
+                                                <label>
+                                                    <input name="specialfamily" class="ace ace-checkbox-1" type="checkbox"
+                                                           id="t4" value="4">
+                                                    <span class="lbl">其他</span>
+                                                </label>
+                                            </div></td>
+                                        <td>
+                                            <div style="padding-top:5px;">
+                                                <label>
+                                                    <button class="btn btn-info" id="queryFarmerBtn">
+                                                        <i class="icon-ok bigger-110"></i>
+                                                        查询
+                                                    </button>
+                                                </label>
+                                            </div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="space-10"></div>
+                            <div class="col-xs-12">
+                                <!-- PAGE CONTENT BEGINS -->
+                                <div id="tableDiv">
+                                    <!--This is the table.-->
+                                    <table id="grid-table"></table>
+                                    <!--This is the pager.-->
+                                    <div id="grid-pager"></div>
+                                </div>
+                                <script type="text/javascript">
+                                    var $path_base = "/";//this will be used in gritter alerts containing images
+                                </script>
+
+                                <!-- PAGE CONTENT ENDS -->
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!-- /.page-content -->
+                </div><!-- /.main-content -->
+                <%--<%@include file="/WEB-INF/jsp/common/setting-btn.jsp" %>--%>
+            </div><!-- /.main-container-inner -->
+
+            <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                <i class="icon-double-angle-up icon-only bigger-110"></i>
+            </a>
+        </div><!-- /.main-container -->
+
+
+        <%--导入尾部js--%>
+        <%@include file="/WEB-INF/jsp/common/import-js.jsp" %>
+        <!-- page specific plugin scripts -->
+
+        <script src="${ctx}/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+        <script src="${ctx}/assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+        <script src="${ctx}/assets/js/jqGrid/i18n/grid.locale-cn.js"></script>
+
+        <!-- inline scripts related to this page -->
+
+        <script type="text/javascript">
+            $(function($) {
+                var specialfamilyValue = '';
+                $('input[name="specialfamily"]:checked').each(function(){
+                    specialfamilyValue = specialfamilyValue + $(this).val() + ',';
+                });
+                //alert("${ctx}/farmer/queryspecialfamily/"+specialfamilyValue+"/&time="+Date.parse(new Date()));
+                var grid_selector = "#grid-table";
+                var pager_selector = "#grid-pager";
+
+                $(grid_selector).jqGrid({
+                    url : "${ctx}/farmer/queryspecialfamily/"+specialfamilyValue+"/"+Date.parse(new Date()),
+                    datatype: "json",
+                    mtype: "GET",
+                    height: 372,
+                    colNames:['ID','姓名','性别','出生年月','所属村','政治面貌','联系号码','走访时间','编辑'],
+                    colModel:[
+
+                        {name:'id',index:'id', width:60, sorttype:"int", editable: false},
+                        {name:'householdername',index:'householdername',width:90, editable:false, sorttype:"textarea",
+                            formatter: makeURL
+                        },
+                        {name:'gender',index:'gender', width:60,editable: true , editable: false, formatter: styleGender},
+                        {name:'birthday',index:'birthday', width:80, sorttype:"int", editable: false},
+                        {name:'village',index:'village', width:100, sorttype:"int", editable: false},
+                        {name:'politicalstatus',index:'politicalstatus', width:90, sorttype:"int", editable: false, formatter: stylePoliticalStatus},
+                        {name:'contactnumber',index:'contactnumber', width:90, sorttype:"int", editable: false},
+                        {name:'visittime',index:'visittime', width:90, editable: false},
+                        {name:'myac',index:'', width:100, fixed:true, sortable:false, resize:false,
+                            formatter:'actions',
+                            formatoptions:{
+                                keys:true,
+                                delOptions:{recreateForm: true, beforeShowForm:beforeDeleteCallback}
+                                //editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
+                            }
+                        }
+                    ],
+                    viewrecords : true,
+                    rowNum:10,
+                    rowList:[10,20,30],
+                    pager : pager_selector,
+                    altRows: true,
+                    //toppager: true,
+                    multiselect: true,
+                    //multikey: "ctrlKey",
+                    multiboxonly: true,
+                    prmNames: {
+                        page: "page", // 表示请求页码的参数名称
+                        rows: "rows", // 表示请求行数的参数名称
+                        sort: "id", // 表示用于排序的列名的参数名称
+                        order: "sord", // 表示采用的排序方式的参数名称
+                        search: "_search", // 表示是否是搜索请求的参数名称
+                        nd: "nd", // 表示已经发送请求的次数的参数名称
+                        id: "id", // 表示当在编辑数据模块中发送数据时，使用的id的名称
+                        oper: "oper", // operation参数名称
+                        editoper: "edit", // 当在edit模式中提交数据时，操作的名称
+                        addoper: "add", // 当在add模式中提交数据时，操作的名称
+                        deloper: "del", // 当在delete模式中提交数据时，操作的名称
+                        subgridid: "id", // 当点击以载入数据到子表时，传递的数据名称
+                        npage: null,
+                        totalrows: "totalrecords" // 表示需从Server得到总共多少行数据的参数名称，参见jqGrid选项中的rowTotal
+                    },
+                    jsonReader: {
+                        root: "dataObj",//json中代表实际模型数据的入口
+                        total: "totalpages",//json中代表页码总数的数据
+                        page: "currentpage",//json中代表当前页码的数据
+                        records: "totalrecords",//json中代表数据行总数的数据
+                        repeatitems: false
+                    },
+                    onPaging : function() {
+
+                    },
+                    editurl: "${ctx}/farmer/modify",//nothing is saved
+                    caption: "农户信息",
+                    autowidth: true,
+                    loadComplete: function () {
+                        var table = this;
+                        setTimeout(function () {
+                            styleCheckbox(table);
+                            updateActionIcons(table);
+                            updatePagerIcons(table);
+                            enableTooltips(table);
+                        }, 0);
+                    }
+                });
+                function styleGender(cellvalue, options, rowObject) {
+                    if(cellvalue =='0'){
+                        return "男";
+                    } else {
+                        return "女";
+                    }
+                }
+                function stylePoliticalStatus(cellvalue, options, rowObject) {
+                    if(cellvalue =='0'){
+                        return "群众";
+                    } else if(cellvalue == '1') {
+                        return "共青团员";
+                    } else {
+                        return "中共党员";
+                    }
+                }
+                //enable search/filter toolbar
+                //jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
+                function makeURL(cellvalue, options, rowObject) {
+                    //cellvalue:要格式化的值，就是原本单元格的值，放置：<a>cellvalue</a>
+                    //options["rowId"]:
+                    //rowObject:当前行的值，可以这样取值：rowObject["id"]，rowObject["username"]，rowObject["pwd"]
+
+                    //alert(rowObject["test"]);//此处的值为返回的json中对应的值。
+                    //alert(options["rowId"]);
+                    //alert(options["colModel"]["name"]);//此处返回的就是“filename”
+                    var urlstring;
+                    urlstring = "<a href='${ctx}/farmer/toviewpage/"+rowObject["id"]+"'>"+cellvalue+"</a>";
+                    return urlstring;
+                }
+                //switch element when editing inline
+                function aceSwitch( cellvalue, options, cell ) {
+                    setTimeout(function(){
+                        $(cell) .find('input[type=checkbox]')
+                                .wrap('<label class="inline" />')
+                                .addClass('ace ace-switch ace-switch-5')
+                                .after('<span class="lbl"></span>');
+                    }, 0);
+                }
+                //enable datepicker
+                function pickDate( cellvalue, options, cell ) {
+                    setTimeout(function(){
+                        $(cell) .find('input[type=text]')
+                                .datepicker({format:'yyyy-mm-dd' , autoclose:true});
+                    }, 0);
+                }
+                //navButtons
+                jQuery(grid_selector).jqGrid('navGrid',pager_selector,
+                        {     //navbar options
+                            edit: true,
+                            editicon : 'icon-pencil blue',
+                            add: true,
+                            addicon : 'icon-plus-sign purple',
+                            del: true,
+                            delicon : 'icon-trash red',
+                            search: true,
+                            searchicon : 'icon-search orange',
+                            refresh: true,
+                            refreshicon : 'icon-refresh green',
+                            view: true,
+                            viewicon : 'icon-zoom-in grey'
+                        },
+                        {
+                            //edit record form
+                            //closeAfterEdit: true,
+                            recreateForm: true,
+                            beforeShowForm : function(e) {
+                                var form = $(e[0]);
+                                form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+                                style_edit_form(form);
+                            }
+                        },
+                        {
+                            //new record form
+                            closeAfterAdd: true,
+                            recreateForm: true,
+                            viewPagerButtons: false,
+                            beforeShowForm : function(e) {
+                                var form = $(e[0]);
+                                form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+                                style_edit_form(form);
+                            }
+                        },
+                        {
+                            //delete record form
+                            recreateForm: true,
+                            beforeShowForm : function(e) {
+                                var form = $(e[0]);
+                                if(form.data('styled')) return false;
+
+                                form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+                                style_delete_form(form);
+
+                                form.data('styled', true);
+                            },
+                            onClick : function(e) {
+                                alert(1);
+                            }
+                        },
+                        {
+                            //search form
+                            recreateForm: true,
+                            afterShowSearch: function(e){
+                                var form = $(e[0]);
+                                form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+                                style_search_form(form);
+                            },
+                            afterRedraw: function(){
+                                style_search_filters($(this));
+                            }
+                            ,
+                            multipleSearch: true
+                            /**
+                             multipleGroup:true,
+                             showQuery: true
+                             */
+                        },
+                        {
+                            //view record form
+                            recreateForm: true,
+                            beforeShowForm: function(e){
+                                var form = $(e[0]);
+                                form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+                            }
+                        }
+                )
+                function style_edit_form(form) {
+                    //enable datepicker on "sdate" field and switches for "stock" field
+                    form.find('input[name=sdate]').datepicker({format:'yyyy-mm-dd' , autoclose:true})
+                            .end().find('input[name=stock]')
+                            .addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+
+                    //update buttons classes
+                    var buttons = form.next().find('.EditButton .fm-button');
+                    buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+                    buttons.eq(0).addClass('btn-primary').prepend('<i class="icon-ok"></i>');
+                    buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+                    buttons = form.next().find('.navButton a');
+                    buttons.find('.ui-icon').remove();
+                    buttons.eq(0).append('<i class="icon-chevron-left"></i>');
+                    buttons.eq(1).append('<i class="icon-chevron-right"></i>');
+                }
+                function style_delete_form(form) {
+                    var buttons = form.next().find('.EditButton .fm-button');
+                    buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+                    buttons.eq(0).addClass('btn-danger').prepend('<i class="icon-trash"></i>');
+                    buttons.eq(1).prepend('<i class="icon-remove"></i>')
+                }
+                function style_search_filters(form) {
+                    form.find('.delete-rule').val('X');
+                    form.find('.add-rule').addClass('btn btn-xs btn-primary');
+                    form.find('.add-group').addClass('btn btn-xs btn-success');
+                    form.find('.delete-group').addClass('btn btn-xs btn-danger');
+                }
+                function style_search_form(form) {
+                    var dialog = form.closest('.ui-jqdialog');
+                    var buttons = dialog.find('.EditTable')
+                    buttons.find('.EditButton a[id*="_reset"]').addClass('btn btn-sm btn-info').find('.ui-icon').attr('class', 'icon-retweet');
+                    buttons.find('.EditButton a[id*="_query"]').addClass('btn btn-sm btn-inverse').find('.ui-icon').attr('class', 'icon-comment-alt');
+                    buttons.find('.EditButton a[id*="_search"]').addClass('btn btn-sm btn-purple').find('.ui-icon').attr('class', 'icon-search');
+                }
+                function beforeDeleteCallback(e) {
+                    var form = $(e[0]);
+                    if(form.data('styled')) return false;
+
+                    form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+                    style_delete_form(form);
+
+                    form.data('styled', true);
+                }
+                function beforeEditCallback(e) {
+                    var form = $(e[0]);
+                    form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+                    style_edit_form(form);
+                }
+                //it causes some flicker when reloading or navigating grid
+                //it may be possible to have some custom formatter to do this as the grid is being created to prevent this
+                //or go back to default browser checkbox styles for the grid
+                function styleCheckbox(table) {
+                    /**
+                     $(table).find('input:checkbox').addClass('ace')
+                     .wrap('<label />')
+                     .after('<span class="lbl align-top" />')
+
+
+                     $('.ui-jqgrid-labels th[id*="_cb"]:first-child')
+                     .find('input.cbox[type=checkbox]').addClass('ace')
+                     .wrap('<label />').after('<span class="lbl align-top" />');
+                     */
+                }
+                //unlike navButtons icons, action icons in rows seem to be hard-coded
+                //you can change them like this in here if you want
+                function updateActionIcons(table) {
+                    /**
+                     var replacement =
+                     {
+                         'ui-icon-pencil' : 'icon-pencil blue',
+                         'ui-icon-trash' : 'icon-trash red',
+                         'ui-icon-disk' : 'icon-ok green',
+                         'ui-icon-cancel' : 'icon-remove red'
+                     };
+                     $(table).find('.ui-pg-div span.ui-icon').each(function(){
+                        var icon = $(this);
+                        var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+                        if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+                    })
+                     */
+                }
+                //replace icons with FontAwesome icons like above
+                function updatePagerIcons(table) {
+                    var replacement =
+                    {
+                        'ui-icon-seek-first' : 'icon-double-angle-left bigger-140',
+                        'ui-icon-seek-prev' : 'icon-angle-left bigger-140',
+                        'ui-icon-seek-next' : 'icon-angle-right bigger-140',
+                        'ui-icon-seek-end' : 'icon-double-angle-right bigger-140'
+                    };
+                    $('.ui-pg-table:not(.navtable) > tbody > tr > .ui-pg-button > .ui-icon').each(function(){
+                        var icon = $(this);
+                        var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+                        if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+                    })
+                }
+                function enableTooltips(table) {
+                    $('.navtable .ui-pg-button').tooltip({container:'body'});
+                    $(table).find('.ui-pg-div').tooltip({container:'body'});
+                }
+                //var selr = jQuery(grid_selector).jqGrid('getGridParam','selrow');
+                $("#queryFarmerBtn").click(function(){
+                    reloadList(grid_selector);
+                });
+                function reloadList(grid_selector) {
+                    var specialfamilyValue = '';
+                    $('input[name="specialfamily"]:checked').each(function(){
+                        specialfamilyValue = specialfamilyValue + $(this).val() + ',';
+                    });
+                    $(grid_selector).jqGrid("setGridParam", {
+                        url: "${ctx}/farmer/queryspecialfamily/"+specialfamilyValue, //设置表格的url
+                        datatype: "json" //设置数据类型
+                        //postData:{'orderId':1} //发送数据
+                    }).trigger("reloadGrid");
+                }
+
+                $(window).resize(function () {
+                    $(grid_selector).setGridWidth($("#tableDiv").width());
+                });
+            });
+        </script>
+    </body>
+</html>
