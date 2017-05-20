@@ -1,0 +1,371 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.jmhz.device</groupId>
+    <artifactId>device</artifactId>
+    <packaging>war</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>jmhz device project</name>
+    <url>https://github.com/SimaStudio</url>
+
+    <properties>
+        <mysql.version>5.1.25</mysql.version>
+        <shiro.version>1.2.3</shiro.version>
+        <prettytime.version>3.2.3.Final</prettytime.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+   
+    <dependencies>
+        <dependency>
+            <groupId>com.nesscomputing.testing</groupId>
+            <artifactId>findbugs-annotations</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!--日期美化-->
+        <dependency>
+            <groupId>org.ocpsoft.prettytime</groupId>
+            <artifactId>prettytime</artifactId>
+            <version>${prettytime.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>17.0</version>
+        </dependency>
+        <!--二维码生成依赖包-->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <!-- 加入spring mvc依赖包 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>3.2.3.RELEASE</version>
+        </dependency>
+        <!-- 加入orm依赖包 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>3.2.3.RELEASE</version>
+        </dependency>
+        <!-- 加入spring测试依赖包 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>3.2.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>3.2.3.RELEASE</version>
+        </dependency>
+        <!-- 加入hibernate依赖包 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.2.2.Final</version>
+        </dependency>
+
+        <!-- 加入junit依赖包 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- 加入mysql驱动依赖包 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
+        <!-- 加入druid数据源依赖包 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+
+        <!-- 加入fastjson依赖包 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.1.31</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.3.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-annotations</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <!-- 加入slf4j依赖包 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
+        <!-- 加入jstl依赖包 -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2.1-b03</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- servlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--shiro-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-aspectj</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-ehcache</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-quartz</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <!-- io包 -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <!-- 加入fileupload依赖包 -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3</version>
+        </dependency>
+        <!--commons-lang3-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <!--commons-collections-->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <!-- poi:office word/excel/power point…… -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.9</version>
+        </dependency>
+        <!-- sms-->
+        <!--       <dependency>
+                   <groupId>com.jasson.im.api</groupId>
+                   <artifactId>ImApi</artifactId>
+                   <version>2.2</version>
+               </dependency>-->
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>device</finalName>
+        <plugins>
+            <!-- 编译的时候使用JDK6和UTF8编码 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.0</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <!-- 配置Maven插件(mvn jetty:run可以运行项目) -->
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>8.1.13.v20130916</version>
+                <configuration>
+                    <reload>automatic</reload>
+                    <scanIntervalSeconds>3</scanIntervalSeconds>
+                    <webAppConfig>
+                        <contextPath>/</contextPath>
+                        <descriptor>${basedir}/src/main/webapp/WEB-INF/web.xml</descriptor>
+                    </webAppConfig>
+                    <connectors>
+                        <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                            <port>8888</port>
+                            <maxIdleTime>60000</maxIdleTime>
+                        </connector>
+                    </connectors>
+                    <war>${basedir}/target/device.war</war>
+                </configuration>
+            </plugin>
+            <!--数据库db-->
+            <!--<plugin>-->
+                <!--<groupId>com.googlecode</groupId>-->
+                <!--<artifactId>maven-db-plugin</artifactId>-->
+                <!--<version>1.4</version>-->
+                <!--<configuration>-->
+                    <!--<adminDbConnectionSettings>-->
+                        <!--<jdbcDriver>${connection.driver_class}</jdbcDriver>-->
+                        <!--<jdbcUrl>${connection.admin.url}</jdbcUrl>-->
+                        <!--<userName>${connection.username}</userName>-->
+                        <!--<password>${connection.password}</password>-->
+                    <!--</adminDbConnectionSettings>-->
+                    <!--<appDbConnectionSettings>-->
+                        <!--<jdbcDriver>${connection.driver_class}</jdbcDriver>-->
+                        <!--<jdbcUrl>${connection.url}</jdbcUrl>-->
+                        <!--<userName>${connection.username}</userName>-->
+                        <!--<password>${connection.password}</password>-->
+                    <!--</appDbConnectionSettings>-->
+                    <!--<dbDataScriptsDirectory>-->
+                        <!--<param>sql/data</param>-->
+                    <!--</dbDataScriptsDirectory>-->
+                    <!--<dbSchemaScriptsDirectory>-->
+                        <!--<param>sql/schema</param>-->
+                    <!--</dbSchemaScriptsDirectory>-->
+                    <!--<dbUpdateScriptsDirectory>-->
+                        <!--<param>sql/update</param>-->
+                    <!--</dbUpdateScriptsDirectory>-->
+                    <!--<dbCreateStatements>-->
+                        <!--create database ${db.name} CHARACTER SET 'utf8';-->
+                    <!--</dbCreateStatements>-->
+                    <!--<dbDropStatements>drop database ${db.name};</dbDropStatements>-->
+                    <!--<sqlDelimiter>;</sqlDelimiter>-->
+                    <!--<scriptEncoding>UTF-8</scriptEncoding>-->
+                <!--</configuration>-->
+                <!--<dependencies>-->
+                    <!--<dependency>-->
+                        <!--<groupId>mysql</groupId>-->
+                        <!--<artifactId>mysql-connector-java</artifactId>-->
+                        <!--<version>${mysql.version}</version>-->
+                    <!--</dependency>-->
+                <!--</dependencies>-->
+            <!--</plugin>-->
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+    <profiles>
+        <profile>
+            <id>development</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <db.name>device</db.name>
+                <connection.driver_class>com.mysql.jdbc.Driver</connection.driver_class>
+                <connection.admin.url>
+                    <![CDATA[jdbc:mysql://localhost:3306?autoReconnect=true&amp;useUnicode=true&amp;zeroDateTimeBehavior=convertToNull&amp;characterEncoding=utf-8]]>
+                </connection.admin.url>
+                <connection.url>
+                    <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;zeroDateTimeBehavior=convertToNull&amp;characterEncoding=utf-8]]>
+                </connection.url>
+                <connection.username>jmhzdevice</connection.username>
+                <connection.password>PdX2I6Ld+vTLf+ACipE9+S9lESj4VId87WLirt4UlDVRjqi3KI4gj+oSDubPwcYU1asnkeNEQg31eAa5xPw1gA==</connection.password>
+                <hibernate.show_sql>true</hibernate.show_sql>
+                <!--jmhzdevice-->
+            </properties>
+        </profile>
+        <profile>
+            <!--正式环境-->
+            <id>production</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <db.name>device</db.name>
+                <connection.driver_class>com.mysql.jdbc.Driver</connection.driver_class>
+                <connection.admin.url>
+                    <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;zeroDateTimeBehavior=convertToNull&amp;characterEncoding=utf-8]]>
+                </connection.admin.url>
+                <connection.url>
+                    <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;zeroDateTimeBehavior=convertToNull&amp;characterEncoding=utf-8]]>
+                </connection.url>
+                <connection.username>jmhzdevice</connection.username>
+                <!-- 3vV2YL8eeugQZZ -->
+                <connection.password>
+                    PdX2I6Ld+vTLf+ACipE9+S9lESj4VId87WLirt4UlDVRjqi3KI4gj+oSDubPwcYU1asnkeNEQg31eAa5xPw1gA==
+                </connection.password>
+                <hibernate.show_sql>false</hibernate.show_sql>
+            </properties>
+        </profile>
+
+    </profiles>
+</project>
