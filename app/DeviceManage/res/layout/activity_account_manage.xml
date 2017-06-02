@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_frame"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+	<LinearLayout
+	        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  
+    android:layout_gravity="center">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/te_person_userID"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="@string/userID" />
+
+        <TextView
+            android:id="@+id/person_userID"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/te_person_userID"
+            android:layout_toRightOf="@id/te_person_userID" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/te_person_userName"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/userName" />
+
+        <TextView
+            android:id="@+id/person_userName"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/te_person_userName"
+            android:layout_toRightOf="@id/te_person_userName" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+  
+
+        <EditText
+            android:id="@+id/et_new_password"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="@string/edit_new_password"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_divide2"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/et_new_password"
+            android:background="#efeff4" />
+
+        <EditText
+            android:id="@+id/et_password_again"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_divide2"
+            android:hint="@string/edit_password_again"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_change_psd_submit"
+        android:layout_marginTop="30dp"
+        android:text="@string/submit"
+        style="@style/bigButton"
+	/>
+</LinearLayout>
+
+</LinearLayout>
+

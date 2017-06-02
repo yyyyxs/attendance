@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <LinearLayout
+        android:id="@+id/mydevices_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relayout1"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/check_my_devices"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/check_my_devices" />
+
+            <TextView
+                style="@style/mycenter_table_item_textview2"
+                android:layout_toRightOf="@id/check_my_devices" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+
+    
+
+        <RelativeLayout
+            android:id="@+id/relayout2"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/te_fault_reporting_progress"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/fault_reporting_progress" />
+
+            <TextView
+                style="@style/mycenter_table_item_textview2"
+                android:layout_toRightOf="@id/te_fault_reporting_progress" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+        
+           <RelativeLayout
+            android:id="@+id/relayout3"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/te_upgrade_reporting_progress"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/upgrade_reporting_progress" />
+
+            <TextView
+                style="@style/mycenter_table_item_textview2"
+                android:layout_toRightOf="@id/te_upgrade_reporting_progress" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

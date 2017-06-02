@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+   
+
+    <com.jmhz.devicemanage.table.UITableView
+        
+        android:id="@+id/foundTable"
+        android:layout_marginBottom="0dp"
+        style="@style/UITableView" />
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:duplicateParentState="true"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/white"
+    android:layout_below="@id/foundTable"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:id="@+id/RelativeLayout1"
+    >
+     <TextView
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:text="订阅名称"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/key"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/key"
+        android:hint="请输入订阅名称"
+        android:background="@null"
+        android:textColor="@color/font1"
+        android:paddingRight="10dp" />
+    
+    
+</RelativeLayout>
+  <Button 
+         android:id="@+id/found"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayout1"
+        android:background="@color/header"
+        
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

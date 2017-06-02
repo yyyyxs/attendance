@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+    <ScrollView 
+        android:layout_width="match_parent"
+    	android:layout_height="fill_parent"
+    	 android:layout_below="@id/mainHead"
+        >
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" 	
+        android:layout_margin="10dp"
+        android:textColor="#787878"
+        android:textSize="20sp"
+        android:text="        朱华局长到任省旅游局后不久，就到省工美创意设计有限公司、省旅游商品（福州）研发中心考察调研旅游商品工作。省旅游局李毅强巡视员、我会皮卫华秘书长、省工艺美术工业总公司总经理、省工美创意设计有限公司董事长叶凌、省工美创意设计有限公司总经理徐滨陪同调研。
+
+朱华局长仔细了解了工美公司旅游商品研发情况后谈了四点意见：\n
+
+一、福建的旅游商品很好，但是缺少特色、缺少创意，今后我们要研发具有福建元素的极具福建地域特色的旅游商品，让每一个来福建的游客能买到称心的“福建礼品”。
+
+\n二、利用我们和台湾隔海相望的优势，成立海峡两岸旅游商品研发创意中心，举办“福建礼品”评选活动，打响福建自己的品牌。
+
+\n三、利用电子商务平台淘宝商城、天猫商城，开设“福建旅游商品旗舰店”，利用电子商务的物流平台把游客购买的旅游礼品及时“送”回家，做到“人未到，礼先到”。
+
+\n四、要把旅游商品系列统筹，市场化推广，促进福建旅游经济的全面发展。
+\n
+\n
+"/>
+    </ScrollView>
+</RelativeLayout>

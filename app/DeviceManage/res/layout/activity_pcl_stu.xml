@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <LinearLayout
+        android:id="@+id/ll_personal_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_student_id"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_stu_id"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/stu_number" />
+
+            <TextView
+                android:id="@+id/tv_et_stu_id"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#cccccc"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_student_name"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_stu_name"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/tv_et_stu_name"
+                   android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#cccccc"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_grade"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_grade"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/year" />
+
+            <TextView
+                android:id="@+id/tv_et_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#cccccc"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_teacher_name"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_teacher_name"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/leader_teacher" />
+
+            <TextView
+                android:id="@+id/tv_et_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#cccccc"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/bigButton"
+        android:layout_below="@id/ll_personal_msg"
+        android:text="@string/submit" />
+
+</RelativeLayout>

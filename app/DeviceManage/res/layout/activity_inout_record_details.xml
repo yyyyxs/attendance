@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <include
+        android:id="@+id/cid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/mainHead"
+        layout="@layout/order_details_item" />
+
+    <include
+        android:id="@+id/stock_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cid"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/order_details_item" />
+
+    <include
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_type"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/order_details_item" />
+
+    <include
+        android:id="@+id/stock_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operator"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/order_details_item" />
+
+    <ListView
+        android:id="@+id/lv_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_time"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="#00000000"
+        android:dividerHeight="5dp" >
+    </ListView>
+
+</RelativeLayout>

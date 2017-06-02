@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_frame" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <LinearLayout
+        android:id="@+id/ll_repair_applyreport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:background="@drawable/list_frame"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_num_applyreport"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_order_num" />
+
+            <TextView
+                android:id="@+id/tv_et_device_num_applyreport"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_num_applyreport"
+                android:layout_toRightOf="@id/tv_device_num_applyreport" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_deivce_name_applyreport"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_name" />
+
+            <TextView
+                android:id="@+id/tv_et_deivce_name_applyreport"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_deivce_name_applyreport"
+                android:layout_toRightOf="@id/tv_deivce_name_applyreport" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_type_applyreport"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_type" />
+
+            <TextView
+                android:id="@+id/tv_et_device_type_applyreport"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_type_applyreport"
+                android:layout_toRightOf="@id/tv_device_type_applyreport" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_status_applyreport"
+                style="@style/stockContent"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_status" />
+
+            <TextView
+                android:id="@+id/tv_et_device_status_applyreport"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_status_applyreport"
+                android:layout_toRightOf="@id/tv_device_status_applyreport" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_repair_user_applyreport"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_repair_user" />
+
+            <TextView
+                android:id="@+id/tv_et_device_repair_user_applyreport"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_repair_user_applyreport"
+                android:layout_toRightOf="@id/tv_device_repair_user_applyreport" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_repair_applytime_applyreport"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_repair_applytime" />
+
+            <TextView
+                android:id="@+id/tv_et_device_repair_applytime_applyreport"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_repair_applytime_applyreport"
+                android:layout_toRightOf="@id/tv_device_repair_applytime_applyreport" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_repair_reason_applyreport"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_repair_reason" />
+
+            <TextView
+                android:id="@+id/tv_et_device_repair_reason_applyreport"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_repair_reason_applyreport"
+                android:layout_toRightOf="@id/tv_device_repair_reason_applyreport" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_repair_status_applyreport"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_approve_status" />
+
+            <TextView
+                android:id="@+id/tv_et_device_repair_status_applyreport"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_repair_status_applyreport"
+                android:layout_toRightOf="@id/tv_device_repair_status_applyreport" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_advice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/agree_yn"
+                android:textColor="#6D6D6D"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_advice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/advice_agree"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_disagree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/advice_disagree"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_audit_opinion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_audit_opinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/audit_opinion"
+                android:textColor="#6D6D6D"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_audit_opinion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/audit_opinion_hint"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_device_audit"
+        style="@style/bigButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/audit_submit"
+        android:layout_below="@id/ll_repair_applyreport"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>

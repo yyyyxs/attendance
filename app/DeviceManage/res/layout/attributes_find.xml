@@ -1,0 +1,41 @@
+  
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+     <LinearLayout
+         android:id="@+id/linear11"
+         android:layout_width="match_parent"
+         android:layout_height="56dp" 
+         android:orientation="horizontal"
+         >
+  
+  <Spinner 
+       android:id="@+id/spinner"
+       android:layout_width="0dp" 
+       android:layout_height="wrap_content" 
+       android:layout_weight="3" /> 
+       
+  <Spinner 
+       android:id="@+id/spinner1"
+       android:layout_width="0dp" 
+       android:layout_height="wrap_content" 
+       android:layout_weight="5" /> 
+       
+  <Button
+      android:id="@+id/searchattri"
+      android:layout_width="34dp"
+      android:layout_height="32dp"
+      android:background="@drawable/search_iv_style" />
+       
+  </LinearLayout>
+  
+  <ListView
+         android:id="@+id/findlist"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+          >
+  </ListView>
+  </LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_frame"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:background="@drawable/list_frame"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_num_devicerevise"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_order_num" />
+
+            <TextView
+                android:id="@+id/tv_et_device_num_devicerevise"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_num_devicerevise"
+                android:layout_toRightOf="@id/tv_device_num_devicerevise" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_deivce_name_devicerevise"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_name" />
+
+            <TextView
+                android:id="@+id/tv_et_deivce_name_devicerevise"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_deivce_name_devicerevise"
+                android:layout_toRightOf="@id/tv_deivce_name_devicerevise" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_type_devicerevise"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_type" />
+
+            <TextView
+                android:id="@+id/tv_et_device_type_devicerevise"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_type_devicerevise"
+                android:layout_toRightOf="@id/tv_device_type_devicerevise" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_price_devicerevise"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_price" />
+
+            <TextView
+                android:id="@+id/tv_et_device_price_devicerevise"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_price_devicerevise"
+                android:layout_toRightOf="@id/tv_device_price_devicerevise" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_buy_time_devicerevise"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_buy_time" />
+
+            <TextView
+                android:id="@+id/tv_et_device_buy_time_devicerevise"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_buy_time_devicerevise"
+                android:layout_toRightOf="@id/tv_device_buy_time_devicerevise" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_device_position_devicerevise"
+                style="@style/stockContent"
+                android:text="@string/device_position" />
+
+            <Spinner
+                android:id="@+id/tv_et_device_position_devicerevise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="#6D6D6D" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_device_user_devicerevise"
+                style="@style/stockContent"
+                android:text="@string/device_user" />
+
+            <EditText
+                android:id="@+id/tv_et_device_user_devicerevise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text"
+                android:textColor="#6D6D6D"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_status_devicerevise"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_status" />
+
+            <TextView
+                android:id="@+id/tv_et_device_status_devicerevise"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_status_devicerevise"
+                android:layout_toRightOf="@id/tv_device_status_devicerevise" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_cpu_info"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/cpu_info" />
+
+            <TextView
+                android:id="@+id/tv_et_device_cpu_info"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_cpu_info"
+                android:layout_toRightOf="@id/tv_device_cpu_info" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_device_graphics_card_info"
+                style="@style/stockContent"
+                android:text="@string/graphics_card_info" />
+
+            <EditText
+                android:id="@+id/tv_et_device_graphics_card_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text"
+                android:textColor="#6D6D6D"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_device_internal_memory_info"
+                style="@style/stockContent"
+                android:text="@string/internal_memory_info" />
+
+            <EditText
+                android:id="@+id/tv_et_device_internal_memory_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text"
+                android:textColor="#6D6D6D"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_device_other_devcie_info"
+                style="@style/stockContent"
+                android:text="@string/other_devcie_info" />
+
+            <EditText
+                android:id="@+id/tv_et_device_other_devcie_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text"
+                android:textColor="#6D6D6D"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_device_audit_devicerevise"
+        style="@style/bigButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/commit" />
+
+</RelativeLayout>

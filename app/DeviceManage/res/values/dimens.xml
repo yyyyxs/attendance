@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- title_main_dimens -->
+    <dimen name="header_button_width">90dp</dimen>
+	<dimen name="button_height">70dp</dimen>
+	<dimen name="button_marginLeft">15dp</dimen>
+	<dimen name="button_marginRight">15dp</dimen>
+	<dimen name="button_marginTop">40dp</dimen>
+	
+	<dimen name="search_view_angle">10px</dimen>
+	<dimen name="search_view_margin">10dp</dimen>
+	
+	<dimen name="search_view_angle_small">20px</dimen>
+	<dimen name="search_view_margin_small">6dp</dimen>
+	
+	<dimen name="address_width">110dp</dimen>
+	<dimen name="address_width_land">200dp</dimen>
+	<dimen name="address_width_small">100dp</dimen>
+	<dimen name="address_long_width">280dp</dimen>
+	
+	
+	<dimen name="popmenu_width">150.0dip</dimen>
+</resources>

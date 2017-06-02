@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <ScrollView
+        android:id="@+id/sv_check_order_details"
+        android:layout_width="fill_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/mainHead" >
+
+        <TextView
+            android:id="@+id/tv_order_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:textSize="25sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_check_order_details"
+        style="@style/bigButton"
+        android:layout_below="@id/sv_check_order_details"
+        android:text="@string/check_order_details" />
+
+</RelativeLayout>

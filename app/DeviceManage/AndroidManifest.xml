@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jmhz.devicemanage"
+    android:versionCode="0"
+    android:versionName="beta 0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name="com.jmhz.devicemanage.mycenter.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Oubbs5In2vKUydaqKGzDgGhk" />
+
+        <activity android:name="com.jmhz.devicemanage.SplashActivity"
+             android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+     <intent-filter>
+      <action android:name="android.intent.action.MAIN" /> 
+     <category android:name="android.intent.category.LAUNCHER" /> 
+      </intent-filter>
+      </activity>
+  
+        <activity
+            android:name="com.jmhz.devicemanage.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+          
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.enter.EnterWarehouseListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.enter.WaitDeliveryListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.enter.SearchDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.BarCodeTestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.enter.Publicandprivate"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.enter.InStockRecodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+            <activity
+            android:name="com.jmhz.devicemanage.enter.coderesult"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.MyCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.ordermessage.OrderMessageDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.jmhz.devicemanage.enter.AttributesFindActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.ChangePsdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.SiteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.ContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.TelnumberActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.EmailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.NodeMapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.ProvinceSelectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.login.ForgetPsdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.OperationManualActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.ordermessage.OrderListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.ordermessage.NewOrderListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.ordermessage.OrderDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.ordermessage.ExpiredOrderListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.StockSummaryReportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.salesorder.SalesOrderManagementActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.salesorder.PaymentListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.salesorder.NonPaymentListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.salesorder.DispatchListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.salesorder.ReceiveListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.waitExit.WaitExitListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stock.SaleOutListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stock.StockManagementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stock.DeliveryOutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stock.DeliveryOutListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stock.ReturnOutListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stock.ReturnOutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stock.OutStockRecodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.jmhz.devicemanage.MainActivity1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.Summary"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- myDevices -->
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.MyDevicesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.ChangeLogActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.FailureReportingActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.ToFailureReportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.UpgradeReportActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.FailureReportActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.FailureReportingProcessActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.MyDeviceDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.MyDevicesListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.UpgradeReportingProcessActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.ToUpgradeReportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.UpgradeReportingActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mydevices.MyDeviceUpdateActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- codingWw -->
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceManageMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceInfoDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceRepairActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceRepairReportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceUpdateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceReviseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceAuditReportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceUpdateAuditReportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.manage.DeviceUpdateReportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.DeviceTotalNumber"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.MaintainNumber"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.UpdateNumber"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.DeviceTotalNumberQuery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.MaintainNumberQuery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.UpdateNumberQuery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.TotalStatistic"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.DeviceStatus"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.MaintainStatus"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.stocksummary.UpdateInformation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.PersonCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.AccountManageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jmhz.devicemanage.mycenter.PersonMesgLookActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         
+    </application>
+
+</manifest>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    
+    <!--  
+    <RelativeLayout
+        android:id="@+id/rl_change_psd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_edit" >
+
+        <EditText
+            android:id="@+id/et_old_password"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="@string/edit_old_password"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_divide1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/et_old_password"
+            android:background="#efeff4" />
+
+        <EditText
+            android:id="@+id/et_new_password"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_divide1"
+            android:hint="@string/edit_new_password"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_divide2"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/et_new_password"
+            android:background="#efeff4" />
+
+        <EditText
+            android:id="@+id/et_password_again"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_divide2"
+            android:hint="@string/edit_password_again"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_change_psd_submit"
+        android:layout_below="@id/rl_change_psd"
+        android:layout_marginTop="30dp"
+        android:text="@string/submit"
+        style="@style/bigButton"
+	/>
+	
+	-->
+</RelativeLayout>

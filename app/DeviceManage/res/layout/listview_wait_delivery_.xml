@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/list_frame" >
+
+        <TextView
+            android:id="@+id/tv_commodity_name"
+            style="@style/commodityContent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/commodity_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_et_commodity_name"
+            style="@style/commodityContent"
+            android:layout_alignBottom="@id/tv_commodity_name"
+            android:layout_toRightOf="@id/tv_commodity_name"
+            android:text="自己编辑"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_commodity_num"
+            style="@style/commodityContent"
+            android:layout_alignLeft="@id/tv_commodity_name"
+            android:layout_below="@id/tv_commodity_name"
+            android:layout_centerVertical="true"
+            android:text="@string/commodity_num"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_et_commodity_num"
+            style="@style/commodityContent"
+            android:layout_alignBottom="@id/tv_commodity_num"
+            android:layout_toRightOf="@id/tv_commodity_num"
+            android:text="自己编辑"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_commodity_Unum"
+            style="@style/commodityContent"
+            android:layout_alignLeft="@id/tv_commodity_num"
+            android:layout_below="@id/tv_commodity_num"
+            android:layout_centerVertical="true"
+            android:text="@string/commodity_Unum"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_et_commodity_Unum"
+            style="@style/commodityContent"
+            android:layout_alignBottom="@id/tv_commodity_Unum"
+            android:layout_toRightOf="@id/tv_commodity_Unum"
+            android:text="自己编辑"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_commodity_divide"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_commodity_Unum"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/btn_commodity_divide" >
+
+            <TextView
+                android:id="@+id/tv_remove"
+                style="@style/commodityContentOrder"
+                android:text="@string/remove" />
+
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#cccccc" />
+
+            <TextView
+                android:id="@+id/tv_confirm_delivery"
+                style="@style/commodityContentOrder"
+                android:text="@string/confirm_delivery" />
+
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#cccccc" />
+
+            <TextView
+                android:id="@+id/tv_check_subcodee"
+                style="@style/commodityContentOrder"
+                android:text="@string/check_subcode" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

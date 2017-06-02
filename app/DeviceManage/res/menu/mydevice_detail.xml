@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/update"
+        android:title="更新设备信息"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/fault"
+        android:title="故障申报"
+        android:orderInCategory="101"
+        android:showAsAction="never" />
+    <item android:id="@+id/upgrade"
+        android:title="设备升级"
+        android:orderInCategory="102"
+        android:showAsAction="never" />
+    <item android:id="@+id/delete"
+        android:title="删除该设备"
+        android:orderInCategory="103"
+        android:showAsAction="never" />
+
+</menu>

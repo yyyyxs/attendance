@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tab_devicerepair_notaudit"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/headtab_pressed"
+            android:gravity="center"
+            android:text="@string/device_not_audit"
+            android:textColor="@color/graye6f"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:contentDescription="@null"
+            android:src="@drawable/rd_mine_orderlist_gapline" />
+
+        <TextView
+            android:id="@+id/tab_devicerepair_audit"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/device_audit"
+            android:textColor="@color/graye6f"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fm_device_repair_notaudit"
+        android:name="com.jmhz.devicemanage.fragment.RepairDeviceNotAuditFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fm_device_repair_audit"
+        android:name="com.jmhz.devicemanage.fragment.RepairDeviceAuditFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

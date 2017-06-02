@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame_style"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/good_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/order_details_item" />
+
+    <include
+        android:id="@+id/stock_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/order_details_item" />
+
+    <include
+        android:id="@+id/good_standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/order_details_item" />
+
+    <include
+        android:id="@+id/good_unitprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        layout="@layout/order_details_item" />
+
+</LinearLayout>

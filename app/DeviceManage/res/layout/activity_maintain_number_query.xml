@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <TableLayout
+        android:id="@+id/total_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainHead"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp" >
+
+        <TableRow
+            android:id="@+id/table_total_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_total_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adress" 
+                android:textSize="28sp"/>
+            
+            <TextView
+                android:id="@+id/main_total_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:layout_marginLeft="30dp"/>
+                
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_public"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_maintain" 
+                android:textSize="28sp"
+                android:layout_marginTop="15dp"/>
+            
+              <TextView
+                android:id="@+id/main_public"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"/>
+              
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wait_maintain" 
+                android:textSize="28sp"
+                android:layout_marginTop="15dp"/>
+            
+             <TextView
+                android:id="@+id/main_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"/>
+            
+        </TableRow>
+        
+    </TableLayout>
+
+</RelativeLayout>

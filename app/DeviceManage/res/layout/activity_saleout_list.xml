@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_sale_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp" >
+
+        <ImageButton
+            android:id="@+id/ibtn_sale_out_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_iv_style" />
+
+        <EditText
+            android:id="@+id/et_sale_out_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/ibtn_sale_out_search"
+            android:background="@drawable/search_ev_style"
+            android:hint="@string/stock_order_num" />
+
+        <ImageButton
+            android:id="@+id/ibtn_sale_out_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/ibtn_sale_out_search"
+            android:background="@drawable/search_close_button_on_off" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_slae_out"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_sale_out"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:divider="#00000000"
+        android:dividerHeight="10dp" >
+    </ListView>
+
+
+
+    <Button
+        android:id="@+id/btn_stock_sign_out"
+        style="@style/bigButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:text="@string/stock_sign_out" />
+        
+      <Button
+        android:id="@+id/bt_reload"
+        style="@style/bigButton"
+        android:layout_above="@id/btn_stock_sign_out"
+        android:layout_marginBottom="2dp"
+        android:text="@string/reload"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_reload"
+        android:layout_below="@id/rl_sale_out"
+        android:contentDescription="@string/non_data"
+        android:src="@drawable/blank"
+        android:visibility="gone" />
+    
+
+</RelativeLayout>

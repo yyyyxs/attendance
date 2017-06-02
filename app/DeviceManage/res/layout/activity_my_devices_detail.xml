@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_frame"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+	<LinearLayout
+	        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    android:orientation="vertical"  
+    android:layout_gravity="center">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/te_md_id"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="@string/device_order_num" />
+
+        <TextView
+            android:id="@+id/md_id"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/te_md_id"
+            android:layout_toRightOf="@id/te_md_id" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/te_md_name"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_name" />
+
+        <TextView
+            android:id="@+id/md_name"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/te_md_name"
+            android:layout_toRightOf="@id/te_md_name" />
+    </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/te_md_place"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_position" />
+
+        <TextView
+            android:id="@+id/md_place"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/te_md_place"
+            android:layout_toRightOf="@id/te_md_place" />
+    </RelativeLayout>
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/te_md_user"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_user" />
+
+        <TextView
+            android:id="@+id/md_user"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/te_md_user"
+            android:layout_toRightOf="@id/te_md_user" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/te_md_type"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_type" />
+
+        <TextView
+            android:id="@+id/md_type"
+            android:textSize="20sp"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/te_md_type"
+            android:layout_toRightOf="@id/te_md_type" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/te_md_state"
+            android:textSize="20sp"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_status" />
+
+        <TextView
+            android:id="@+id/md_state"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/te_md_state"
+            android:layout_toRightOf="@id/te_md_state" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/te_md_price"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_price" />
+
+        <TextView
+            android:id="@+id/md_price"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/te_md_price"
+            android:layout_toRightOf="@id/te_md_price" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/te_md_buytime"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_buy_time" />
+
+        <TextView
+            android:id="@+id/md_buytime"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/te_md_buytime"
+            android:layout_toRightOf="@id/te_md_buytime" />
+    </RelativeLayout>
+               
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" 
+                android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+        <Spinner
+            android:id="@+id/spinner_md_configinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#6D6D6D" />
+
+      <TextView
+            android:id="@+id/md_configinfo"
+            style="@style/stockContent"
+            android:textSize="20sp"
+            android:layout_alignBottom="@id/spinner_md_configinfo"
+            android:layout_toRightOf="@id/spinner_md_configinfo" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <TextView
+        android:id="@+id/tv_return_out_site"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/return_out_site"
+        android:textColor="@color/textcolor_gray"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/sp_return_out_site"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/tv_return_out_site"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:animationCache="true"
+        android:background="@drawable/spinner"
+        android:drawSelectorOnTop="true" />
+
+    <Button
+        android:id="@+id/btn_stock_out"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/return_out_scan"
+        style="@style/bigButton"
+         />
+
+</RelativeLayout>

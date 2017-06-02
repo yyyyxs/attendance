@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <RelativeLayout
+        android:id="@+id/rl_forgetpsd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_edit" >
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/edit_email"
+            android:textSize="20sp" />
+<Button
+            android:id="@+id/btn_divide"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/et_email"
+            android:background="#efeff4" />
+
+        <EditText
+            android:id="@+id/et_verification_code"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_divide"
+            android:hint="@string/verification_code"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+         <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/btn_divide"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/get_verification_code"
+        android:textColor="@color/white"
+        android:background="@drawable/big_button_on_off"
+	/>
+    </RelativeLayout>
+  <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_forgetpsd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_edit" >
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="@string/login_password"
+             android:inputType="textPassword"
+            android:textSize="20sp" />
+<Button
+            android:id="@+id/btn_divide2"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/et_password"
+            android:background="#efeff4" />
+
+        <EditText
+            android:id="@+id/verify_password"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_divide2"
+            android:hint="@string/verify_password"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_forgetpsd_submit"
+        android:layout_below="@id/rl_password"
+        android:text="@string/change_psd"
+        style="@style/bigButton"
+	/>
+</RelativeLayout>

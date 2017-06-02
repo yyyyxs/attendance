@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_frame"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_num_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_order_num" />
+
+        <TextView
+            android:id="@+id/tv_et_device_num_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_num_updatenotaudit"
+            android:layout_toRightOf="@id/tv_device_num_updatenotaudit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_deivce_name_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_name" />
+
+        <TextView
+            android:id="@+id/tv_et_deivce_name_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_deivce_name_updatenotaudit"
+            android:layout_toRightOf="@id/tv_deivce_name_updatenotaudit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_deivce_type_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_type" />
+
+        <TextView
+            android:id="@+id/tv_et_deivce_type_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_deivce_type_updatenotaudit"
+            android:layout_toRightOf="@id/tv_deivce_type_updatenotaudit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_status_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_status" />
+
+        <TextView
+            android:id="@+id/tv_et_device_status_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_status_updatenotaudit"
+            android:layout_toRightOf="@id/tv_device_status_updatenotaudit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_update_user_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_repair_user" />
+
+        <TextView
+            android:id="@+id/tv_et_device_update_user_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_update_user_updatenotaudit"
+            android:layout_toRightOf="@id/tv_device_update_user_updatenotaudit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_update_applytime_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_repair_applytime" />
+
+        <TextView
+            android:id="@+id/tv_et_device_update_applytime_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_update_applytime_updatenotaudit"
+            android:layout_toRightOf="@id/tv_device_update_applytime_updatenotaudit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_update_reason_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_repair_reason" />
+
+        <TextView
+            android:id="@+id/tv_et_device_update_reason_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_update_reason_updatenotaudit"
+            android:layout_toRightOf="@id/tv_device_update_reason_updatenotaudit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_update_approve_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_approve_status" />
+
+        <TextView
+            android:id="@+id/tv_et_device_update_approve_updatenotaudit"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_update_approve_updatenotaudit"
+            android:layout_toRightOf="@id/tv_device_update_approve_updatenotaudit" />
+    </RelativeLayout>
+
+</LinearLayout>

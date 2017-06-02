@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gson-2.2.2-da42a3ab8534b4a9ed04d12922f77708.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/BaiduLBS_Android-39c7b81cced8b05570535ccb6ce8889b.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/achartengine-1.1.0-df263bf720fefbfaad748697337e5b8f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/istack-commons-runtime-9638b5364b9ad0e1630baf325d5d7578.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ZXing-core-2.2-08abd0ab6d7d08061a67ab11e8eda2a4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/txw2-20110809-25d6b58c844a9f9a596b474ec0e68928.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jaxp-datatype-9ef2326f143421a8750909b4b497275d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/additionnal-e00d2f7077cf36373681ded10eb84e4e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ae-jaxb-2.2.5-6dbed5fb97b668094ae76685d439db25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/UIDTraceAndroidSupport-bb3ce076e29dab7bb48578000e077c3a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/locSDK_3.1-a135a6d487769c4130fc9e4be3ce87d3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ZXing-javase-2.2-17fba3b9521992de5c97f360446d1f21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/activation-5f822e06d99745896ded36ce0091adc7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-7ae7d0e811fc04bebcebb45f218691b0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/log4j-14cb9202aab747b3a6e1ef585aec8614.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

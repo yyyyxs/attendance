@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_frame"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <LinearLayout
+        android:id="@+id/device_information_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:background="@drawable/list_frame"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/device_num_update"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_order_num" />
+
+            <TextView
+                android:id="@+id/et_device_num_update"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/device_num_update"
+                android:layout_toRightOf="@id/device_num_update" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/device_name_update"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_name" />
+
+            <TextView
+                android:id="@+id/et_device_name_update"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/device_name_update"
+                android:layout_toRightOf="@id/device_name_update" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/device_type_update"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_type" />
+
+            <TextView
+                android:id="@+id/et_device_type_update"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/device_type_update"
+                android:layout_toRightOf="@id/device_type_update" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/device_price_update"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_price" />
+
+            <TextView
+                android:id="@+id/et_device_price_update"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/device_price_update"
+                android:layout_toRightOf="@id/device_price_update" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/device_buytime_update"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_buy_time" />
+
+            <TextView
+                android:id="@+id/et_device_buytime_update"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/device_buytime_update"
+                android:layout_toRightOf="@id/device_buytime_update" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/device_status_update"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_status" />
+
+            <TextView
+                android:id="@+id/et_device_status_update"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/device_status_update"
+                android:layout_toRightOf="@id/device_status_update" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/device_position_update"
+                style="@style/stockContent"
+                android:text="@string/device_position" />
+
+            <Spinner
+                android:id="@+id/spinner_device_position_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/device_position_update"
+                android:textColor="#6D6D6D" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/device_user_update"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_user" />
+
+            <TextView
+                android:id="@+id/et_device_user_update"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/device_user_update"
+                android:layout_toRightOf="@id/device_user_update" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/device_CPUInfo_update"
+                    style="@style/stockContent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/device_cpu_info" />
+
+                <TextView
+                    android:id="@+id/et_device_CPUInfo_update"
+                    style="@style/stockContent"
+                    android:layout_alignBottom="@id/device_CPUInfo_update"
+                    android:layout_toRightOf="@id/device_CPUInfo_update" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/device_InternalMemory_update"
+                    style="@style/stockContent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/device_internal_memory_info" />
+
+                <EditText
+                    android:id="@+id/et_device_InternalMemory_update"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/device_InternalMemory_update"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/device_InternalMemory_update" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/device_GraphicsCard_update"
+                    style="@style/stockContent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/device_graphics_card_info" />
+
+                <EditText
+                    android:id="@+id/et_device_GraphicsCard_update"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/device_GraphicsCard_update"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/device_GraphicsCard_update" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/device_otherInfo_update"
+                    style="@style/stockContent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/device_other_devcie_info" />
+
+                <EditText
+                    android:id="@+id/et_device_otherInfo_update"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/device_otherInfo_update"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/device_otherInfo_update"
+                    android:gravity="left|top"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:scrollbars="vertical"
+                    android:singleLine="false" />
+            </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mydevice_update_submit"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/device_information_update"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/big_button_on_off"
+        android:text="@string/reporting"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/mydevice_update_cancel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/device_information_update"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/big_button_on_off"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

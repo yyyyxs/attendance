@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_frame"
+    android:orientation="vertical" >
+
+    
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/lv_mydevice_id"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_order_num" />
+
+            <TextView
+                android:id="@+id/et_lv_mydevice_id"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/lv_mydevice_id"
+                android:layout_toRightOf="@id/lv_mydevice_id" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/lv_mydevice_name"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_name" />
+
+            <TextView
+                android:id="@+id/et_lv_mydevice_name"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/lv_mydevice_name"
+                android:layout_toRightOf="@id/lv_mydevice_name" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/lv_mydevice_type"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_type" />
+
+        <TextView
+            android:id="@+id/et_lv_mydevice_type"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/lv_mydevice_type"
+            android:layout_toRightOf="@id/lv_mydevice_type" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/lv_mydevice_place"
+                style="@style/stockContent"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_position" />
+
+            <TextView
+                android:id="@+id/et_lv_mydevice_place"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/lv_mydevice_place"
+                android:layout_toRightOf="@id/lv_mydevice_place" />
+        </RelativeLayout>
+ 
+           <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/lv_mydevice_user"
+                style="@style/stockContent"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_user" />
+
+            <TextView
+                android:id="@+id/et_lv_mydevice_user"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/lv_mydevice_user"
+                android:layout_toRightOf="@id/lv_mydevice_user" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/lv_mydevice_state"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_status" />
+
+            <TextView
+                android:id="@+id/et_lv_mydevice_state"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/lv_mydevice_state"
+                android:layout_toRightOf="@id/lv_mydevice_state" />
+        </RelativeLayout>
+
+
+
+</LinearLayout>

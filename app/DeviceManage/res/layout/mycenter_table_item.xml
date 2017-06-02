@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+	 <TextView 
+       	android:id="@+id/key"
+        android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+       	android:textSize="20sp"
+       	android:layout_centerVertical="true"
+        />
+
+      <TextView 
+       	android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+   		android:layout_height="wrap_content"
+       	android:textSize="20sp"
+       	android:textColor="#cccccc"
+       	android:text="1123123"
+       	android:layout_centerVertical="true"
+       	android:drawableRight="@drawable/goforward"
+       	
+        /> 
+</RelativeLayout>

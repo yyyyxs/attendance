@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_frame"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_num"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_order_num" />
+
+        <TextView
+            android:id="@+id/tv_et_device_num"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_num"
+            android:layout_toRightOf="@id/tv_device_num" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_deivce_name"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_name" />
+
+        <TextView
+            android:id="@+id/tv_et_deivce_name"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_deivce_name"
+            android:layout_toRightOf="@id/tv_deivce_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_type"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_type" />
+
+        <TextView
+            android:id="@+id/tv_et_device_type"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_type"
+            android:layout_toRightOf="@id/tv_device_type" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_buy_time"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_buy_time" />
+
+        <TextView
+            android:id="@+id/tv_et_device_buy_time"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_buy_time"
+            android:layout_toRightOf="@id/tv_device_buy_time" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_position"
+            style="@style/stockContent"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_position" />
+
+        <TextView
+            android:id="@+id/tv_et_device_position"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_position"
+            android:layout_toRightOf="@id/tv_device_position" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_device_status_adapter"
+            style="@style/stockContent"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_status" />
+
+        <TextView
+            android:id="@+id/tv_et_device_status_adapter"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_device_status_adapter"
+            android:layout_toRightOf="@id/tv_device_status_adapter" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_fuser"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_user" />
+
+            <TextView
+                android:id="@+id/tv_et_device__fuser"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_fuser"
+                android:layout_toRightOf="@id/tv_device_fuser" />
+        </RelativeLayout>
+</LinearLayout>

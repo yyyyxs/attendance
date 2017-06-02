@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+        
+        <CheckBox
+            android:id="@+id/checkbox_floor_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"/>
+
+        <TextView
+            android:id="@+id/textviwe_floor_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/floor_number" 
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/spinner_floor_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:entries="@array/spingarr_floor_number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+        
+        <CheckBox
+            android:id="@+id/checkbox_class_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"/>
+
+        <TextView
+            android:id="@+id/textviwe_class_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/class_number" 
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/spinner_class_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+           android:entries="@array/spingarr_class_number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkbox_public_or_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"/>
+
+        <TextView
+            android:id="@+id/textviwe_public_or_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/public_private" 
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/spinner_public_or_private"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+           />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/total_number_query"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linear3"
+        android:layout_marginTop="50dp"
+        android:text="@string/query"
+        style="@style/bigButton" />
+    
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/payment_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="#00000000"
+        android:dividerHeight="-1dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/bt_reload"
+        style="@style/bigButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:text="@string/reload"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_reload"
+        android:contentDescription="@string/non_data"
+        android:src="@drawable/blank"
+        android:visibility="gone" />
+
+</RelativeLayout>

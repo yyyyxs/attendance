@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/search_update"
+        android:title="更新设备信息"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    
+    <item android:id="@+id/search_delete"
+        android:title="删除该设备"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+</menu>

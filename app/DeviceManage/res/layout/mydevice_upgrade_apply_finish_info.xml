@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_frame"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/upgrade_apply_finish_device_id"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_order_num" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_apply_finish_device_id"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/upgrade_apply_finish_device_id"
+            android:layout_toRightOf="@id/upgrade_apply_finish_device_id" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/upgrade_apply_finish_device_name"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_name" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_apply_finish_device_name"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/upgrade_apply_finish_device_name"
+            android:layout_toRightOf="@id/upgrade_apply_finish_device_name" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/upgrade_apply_finish_device_type"
+            style="@style/stockContent"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_type" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_apply_finish_device_type"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/upgrade_apply_finish_device_type"
+            android:layout_toRightOf="@id/upgrade_apply_finish_device_type" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/upgrade_apply_finish_device_user"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/device_user" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_apply_finish_device_user"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/upgrade_apply_finish_device_user"
+            android:layout_toRightOf="@id/upgrade_apply_finish_device_user" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/upgrade_apply_finish_time"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/applytime" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_apply_finish_time"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/upgrade_apply_finish_time"
+            android:layout_toRightOf="@id/upgrade_apply_finish_time" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/upgrade_apply_finish_describe"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/upgrade_describe" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_apply_finish_describe"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/upgrade_apply_finish_describe"
+            android:layout_toRightOf="@id/upgrade_apply_finish_describe" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/upgrade_report_send"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/send_upgrade_report" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_report_send"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/upgrade_report_send"
+            android:layout_toRightOf="@id/upgrade_report_send" />
+    </RelativeLayout>
+
+</LinearLayout>

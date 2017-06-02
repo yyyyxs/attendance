@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- homepage -->
+    <string name="app_name">设备管理</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello cfq 优米快线!</string>
+    <string name="notice">提示</string>
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+    <string name="please_choose">请选择</string>
+    <string name="home_page">首页</string>
+    <string name="log_out">登出\n账号</string>
+    <string name="log_in">登录\n账号</string>
+    <string name="stock_management">设备查询</string>
+    <string name="warehouse_management">设备管理</string>
+    <string name="sales_order_management">销货订单管理</string>
+    <string name="order_message_management">订单消息管理</string>
+    <string name="stock_summary_report">设备统计</string>
+    <string name="pub">公有</string>
+    <string name="pri">"私有</string>
+    <string name="my_center">  个人中心  </string>
+    <string name="no_login">请先登录</string>
+    <string name="dialog_msg">登出账号？</string>
+    <string name="log_out_success">登出成功！</string>
+    <string name="log_out_false">登出失败，请重新操作！</string>
+    <string name="delete">删除</string>
+    <!-- mycenter -->
+    <string name="personal_manager">个人中心</string>
+    <string name="attributefind">属性查找</string>
+    <string name="submit">提交</string>
+    <string name="site_name">站点名称</string>
+    <string name="contacts_name">联系人</string>
+    <string name="site_address">站点地址</string>
+    <string name="telnumber">手机号码</string>
+    <string name="email">邮箱</string>
+    <string name="change_psd">修改密码</string>
+    <string name="check_version">检查版本</string>
+    <string name="mark_address">标记地址</string>
+    <string name="operation_method">操作\n手册</string>
+    <string name="operation_manual">操作手册</string>
+    <string name="contacts">联系人</string>
+    <string name="edit_contacts">请输入联系人</string>
+    <string name="edit_site">请输入站点名称</string>
+    <string name="edit_telnumber">请输入手机号码</string>
+    <string name="edit_email">请输入邮箱</string>
+    <string name="change_password">修改密码</string>
+    <string name="edit_old_password">请输入旧密码</string>
+    <string name="edit_new_password">请输入新密码</string>
+    <string name="edit_password_again">请再次输入密码</string>
+    <string name="changepsd_prompt">提示</string>
+    <string name="changepsd_prompt_content">系统已经将您的登录密码发送到\n指定邮箱，请注意查收</string>
+    <string name="location">站点\n定位</string>
+    <string name="province">省选择</string>
+    <!-- login -->
+    <string name="login">登陆</string>
+    <string name="login_et_username">请输入用户名</string>
+    <string name="login_et_password">请输入密码</string>
+    <string name="remember_psd">记住密码</string>
+    <string name="auto_login">自动登入</string>
+    <string name="forget_psd">忘记密码</string>
+    <string name="verification_code">验证码</string>
+    <string name="login_password">登录密码</string>
+    <string name="verify_password">确认密码</string>
+    <string name="get_verification_code">获取验证码</string>
+
+    <!-- ordermessage -->
+    <string name="order_message_list">订单消息记录</string>
+    <string name="check_order_details">查看订单详情</string>
+    <string name="order_msg_details">订单消息详情</string>
+    <string name="order_details">订单详情</string>
+    <string name="clear_all">清除\n所有</string>
+    <string name="distribution_scanning">配送\n扫描</string>
+    <string name="distribution_scanning_title">配送扫描</string>
+    <string name="back">返回</string>
+    <string name="wait_delivery_list">待入库列表</string>
+    <string name="wait_exit_list">待出库列表</string>
+    <string name="commodity_name">商品名称：</string>
+    <string name="commodity_type">商品规格：</string>
+    <string name="commodity_buy_num">购买数量：</string>
+    <string name="commodity_money">商品单价：</string>
+    <string name="order_sum_money">订单总额：</string>
+    <string name="commodity_num">数量：</string>
+    <string name="commodity_Unum">U码：</string>
+    <string name="remove">移除</string>
+    <string name="confirm_delivery">确认出库</string>
+    <string name="check_subcode">查看子码</string>
+
+    <!-- StockManagement -->
+    <string name="stock_out_management">出库管理</string>
+    <string name="stock_order_num">单&#160;&#160;&#160;&#160;&#160;&#160;号 ：</string>
+    <string name="stock_order_type">类&#160;&#160;&#160;&#160;&#160;&#160;型 ：</string>
+    <string name="stock_commodity_num">订&#160;单&#160;号：</string>
+    <string name="stock_transactor_name">经&#160;办&#160;&#160;人：</string>
+    <string name="stock_sum">总&#160;&#160;&#160;&#160;&#160;&#160;数 ：</string>
+    <string name="stock_purpose_site">目的出库点 ：</string>
+    <string name="stock_data">时&#160;&#160;&#160;&#160;&#160;&#160;间 ：</string>
+    <string name="stock_sign_out">出库登记</string>
+    <string name="stock_choose_sign_type">请选择出库类型</string>
+    <string name="stock_out_record">出库详情</string>
+    <!-- BarCodeTest -->
+    <string name="hello">Hello World, BarCodeTestActivity!</string>
+    <string name="Open_camara">打开相机</string>
+    <string name="Scan_result">扫描结果:</string>
+    <string name="Input_text">输入文本:</string>
+    <string name="QRcode">二维码生成:</string>
+    <string name="ImageDesc">None</string>
+
+    <!-- delivery_out -->
+    <string name="delivery_out">调货出库</string>
+    <string name="delivery_out_scan">出库扫描</string>
+    <string name="delivery_out_site">请选择调货站点：</string>
+
+    <!-- return_out -->
+    <string name="return_out">退货出库</string>
+    <string name="return_out_scan">出库扫描</string>
+    <string name="return_out_site">请选择调货站点：</string>
+
+    <!-- enter_warehouse -->
+    <string name="enter_warehouse_sign">入库管理</string>
+    <string name="enter_warehouse_record">入库详情</string>
+    <string name="enter_warehouse_register">二维码扫描</string>
+    <string name="continue_scan">继续扫描</string>
+    <string name="enter_warehouse_scan">入库扫描</string>
+    <string name="enter_out_management">出库\n管理</string>
+    <string name="enter_warehouse_dialog_msg">确定移除？</string>
+    <!-- version_updata -->
+    <string name="version_updata_content">是否开始下载</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <!-- sales order -->
+    <string name="reload">刷新</string>
+    <string name="non_data">暂无数据</string>
+
+    <!-- codingWw -->
+    <string name="device_manage">设备管理</string>
+    <string name="device_repair">设备维修</string>
+    <string name="device_update">设备升级</string>
+    <string name="device_uuid">设备UUID：</string>
+    <string name="device_order_num">设备编号：</string>
+    <string name="device_name">设备名称：</string>
+    <string name="device_type">设备类型：</string>
+    <string name="device_price">设备价格：</string>
+    <string name="device_buy_time">购买时间：</string>
+    <string name="device_position">设备位置：</string>
+    <string name="device_user">使用用户：</string>
+    <string name="userID">用户ID：</string>
+     <string name="userName">用户名：</string>
+    <string name="device_status">设备状态：</string>
+    <string name="device_config">设备配置：</string>
+    <string name="device_info_detail">设备详情</string>
+    <string name="device_repair_applytime">申请时间：</string>
+    <string name="device_repair_approvetime">审核时间：</string>
+    <string name="device_repair_reason">申请理由：</string>
+    <string name="device_approve_status">审核状态：</string>
+    <string name="device_repair_advice">审核意见：</string>
+    <string name="device_repair_report">申请报告</string>
+    <string name="repair_approve">维修审核</string>
+    <string name="update_approve">升级审核</string>
+    <string name="device_repair_user">申请用户：</string>
+    <string name="device_audit">已审核</string>
+    <string name="device_not_audit">未审核</string>
+    <string name="device_deal_status">处理状态：</string>
+    <string name="device_repair_cost">维修开销：</string>
+    <string name="device_update_cost">升级开销：</string>
+    <string name="device_change">配件更换：</string>
+    <string name="device_repair_result">维修情况：</string>
+    <string name="device_update_result">升级情况：</string>
+    <string name="cpu_info">CPU信息：</string>
+    <string name="graphics_card_info">显卡信息：</string>
+    <string name="internal_memory_info">内存信息：</string>
+    <string name="other_devcie_info">其他信息：</string>
+    <string name="agree_yn">是否同意：</string>
+    <string name="advice_agree">同&#160;意</string>
+    <string name="advice_disagree">不同意</string>
+    <string name="audit_opinion">审核意见：</string>
+    <string name="audit_opinion_hint">填写审核意见</string>
+    <string name="audit_submit">审核提交</string>
+    <string name="apply_record">申报记录：</string>
+
+    <!-- statistical information -->
+    <string name="statistical_information">设备信息统计</string>
+    <string name="total_number">设备总数统计</string>
+    <string name="maintain_number">维修设备统计</string>
+    <string name="update_number">升级设备统计</string>
+    <string name="query">查询</string>
+    <string name="floor_number">楼&#160;&#160;&#160;&#160;号:</string>
+    <string name="class_number">教室号:</string>
+    <string name="public_private">公私有:</string>
+    <string name="device_number">设备总数</string>
+    <string name="public_have">公&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;有</string>
+    <string name="private_have">私&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;有</string>
+    <string name="query_result">查询结果</string>
+    <string name="adress">地&#160;&#160;&#160;&#160;点</string>
+    <string name="already_maintain">已维修</string>
+    <string name="wait_maintain">未维修</string>
+    <string name="being_maintain">维修中</string>
+    <string name="already_update">已升级</string>
+    <string name="wait_update">未升级</string>
+    <string name="being_update">升级中</string>
+    <string name="using">使用中</string>
+    <string name="idle">闲置</string>
+    <string name="go_broken">报废</string>
+    <string name="maintain">维修</string>
+    <string name="update">更新</string>
+
+    <string-array name="total_statistic">
+        <item>显示所有年份设备量</item>
+        <item>显示所有实验室设备量</item>
+    </string-array>
+    <string-array name="spinner_year_adress">
+        <item>年份</item>
+        <item>地点</item>
+    </string-array>
+    <string-array name="spingarr_floor_number">
+        <item>数计2号楼</item>
+        <item>数计3号楼</item>
+    </string-array>
+    <string-array name="spingarr_class_number">
+        <item>301</item>
+        <item>303</item>
+    </string-array>
+
+    <string name="myDevices">  我的设备  </string>
+    <!-- device my center -->
+
+    <string name="person_mesg_look">个人信息查看</string>
+    <string name="person_mesg_edit">个人信息修改</string>
+    <string name="account_manage">账号管理</string>
+    <string name="version_check">版本检测</string>
+    <string name="teacher_id">工号</string>
+    <string name="name">姓名</string>
+    <string name="deviceUUID">设备UUID</string>
+    <string name="stu_number">学号</string>
+    <string name="year">年级</string>
+    <string name="leader_teacher">导师姓名</string>
+    <string name="staff_number">员工号</string>
+    <string name="level">等级</string>
+
+    <!-- myDevices -->
+    <string-array name="spinner_device_type">
+        <item>私有</item>
+        <item>公有</item>
+    </string-array>
+    <string-array name="spinner_repair_state">
+        <item>已维修</item>
+        <item>维修中</item>
+        <item>未维修</item>
+    </string-array>
+
+    <string name="my_devices_repair">设备维修</string>
+    <string name="my_devices_upgrade">设备升级</string>
+    <string name="check_my_devices">查看我的设备</string>
+    <string name="failure_reporting">设备故障申报</string>
+    <string name="upgrade_reporting">设备升级申报</string>
+    <string name="fault_reporting_progress">故障申报进度</string>
+    <string name="upgrade_reporting_progress">升级申报进度</string>
+    <string name="device_configInfo">配置信息：</string>
+    <string name="repair_state">维修状态：</string>
+    <string name="upgrade_state">升级状态：</string>
+    <string name="repair_item">维修部件：</string>
+    <string name="upgrade_item">升级部件：</string>
+    <string name="repair_spend">维修花费：</string>
+    <string name="upgrade_spend">升级花费：</string>
+    <string name="repair_result">维修结果：</string>
+    <string name="upgrade_result">升级结果：</string>
+    <string name="applytime">申报时间：</string>
+    <string name="chosea_pplytime">请选择申报日期</string>
+    <string name="repair_describe">维修描述:</string>
+    <string name="send_fault_report">维修报告:</string>
+    <string name="send_upgrade_report">升级报告:</string>
+    <string name="upgrade_describe">升级描述:</string>
+    <string name="device_cpu_info">CPU信息:</string>
+    <string name="device_graphics_card_info">显卡信息:</string>
+    <string name="device_internal_memory_info">内存信息:</string>
+    <string name="device_other_devcie_info">其他信息:</string>
+    <string name="apply_notaudit">未审核</string>
+    <string name="apply_audit">已审核</string>
+    <string name="apply_reject">被驳回</string>
+    <string name="apply_finish">已维修</string>
+    <string name="reporting">申报</string>
+    <string name="commit">提交</string>
+    <string name="cancel">取消</string>
+    <string name="changelog">设备修改日志</string>
+
+</resources>

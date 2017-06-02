@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_frame" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <LinearLayout
+        android:id="@+id/ll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:background="@drawable/frame_style"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_num"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_order_num" />
+
+            <TextView
+                android:id="@+id/tv_et_device_num"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_num"
+                android:layout_toRightOf="@id/tv_device_num" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_deivce_name"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_name" />
+
+            <TextView
+                android:id="@+id/tv_et_deivce_name"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_deivce_name"
+                android:layout_toRightOf="@id/tv_deivce_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_type"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_type" />
+
+            <TextView
+                android:id="@+id/tv_et_device_type"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_type"
+                android:layout_toRightOf="@id/tv_device_type" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_price"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_price" />
+
+            <TextView
+                android:id="@+id/tv_et_device_price"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_price"
+                android:layout_toRightOf="@id/tv_device_price" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_buy_time"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_buy_time" />
+
+            <TextView
+                android:id="@+id/tv_et_device_buy_time"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_buy_time"
+                android:layout_toRightOf="@id/tv_device_buy_time" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_position"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_position" />
+
+            <TextView
+                android:id="@+id/tv_et_device_position"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_position"
+                android:layout_toRightOf="@id/tv_device_position" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_user"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_user" />
+
+            <TextView
+                android:id="@+id/tv_et_device_user"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_user"
+                android:layout_toRightOf="@id/tv_device_user" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_device_status"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_status" />
+
+            <TextView
+                android:id="@+id/tv_et_device_status"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_device_status"
+                android:layout_toRightOf="@id/tv_device_status" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <Spinner
+                android:id="@+id/tv_device_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#6D6D6D" />
+
+            <TextView
+                android:id="@+id/tv_et_device_config"
+                style="@style/stockContent"
+                android:layout_toRightOf="@id/tv_device_config" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_device_audit_detail"
+        style="@style/bigButton"
+        android:layout_below="@id/ll_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="管 理" />
+
+    <Button
+        android:id="@+id/bt_reload_detailinfo"
+        style="@style/bigButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:text="@string/reload"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/blank_detailinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_reload_detailinfo"
+        android:layout_below="@id/mainHead"
+        android:contentDescription="@string/non_data"
+        android:src="@drawable/blank"
+        android:visibility="gone" />
+
+</RelativeLayout>

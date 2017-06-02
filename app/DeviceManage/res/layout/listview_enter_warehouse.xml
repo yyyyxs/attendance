@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_frame"
+    android:orientation="vertical" >
+
+    
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_enter_order_num"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/stock_order_num" />
+
+            <TextView
+                android:id="@+id/tv_et_enter_order_num"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_enter_order_num"
+                android:layout_toRightOf="@id/tv_enter_order_num" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_enter_order_type"
+                style="@style/stockContent"
+                android:layout_marginTop="10dp"
+                android:text="@string/stock_order_type" />
+
+            <TextView
+                android:id="@+id/tv_et_enter_order_type"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_enter_order_type"
+                android:layout_toRightOf="@id/tv_enter_order_type" />
+        </RelativeLayout>
+ 
+   
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_enter_transactor_name"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/stock_transactor_name" />
+
+            <TextView
+                android:id="@+id/tv_et_enter_transactor_name"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_enter_transactor_name"
+                android:layout_toRightOf="@id/tv_enter_transactor_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_enter_sum"
+                style="@style/stockContent"
+                android:layout_marginTop="10dp"
+                android:text="@string/stock_sum" />
+
+            <TextView
+                android:id="@+id/tv_et_enter_sum"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_enter_sum"
+                android:layout_toRightOf="@id/tv_enter_sum" />
+        </RelativeLayout>
+   
+
+    <RelativeLayout
+        android:id="@+id/rl_enter5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/tv_enter_data"
+            style="@style/stockContent"
+            android:layout_marginTop="10dp"
+            android:text="@string/stock_data" />
+
+        <TextView
+            android:id="@+id/tv_et_enter_data"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_enter_data"
+            android:layout_toRightOf="@id/tv_enter_data" />
+    </RelativeLayout>
+
+</LinearLayout>

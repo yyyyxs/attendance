@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/list_frame"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/tv_wait_delivery_commodity_name"
+            style="@style/commodityContent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/commodity_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_et_wait_delivery_commodity_name"
+            style="@style/commodityContent"
+            android:layout_alignBottom="@id/tv_wait_delivery_commodity_name"
+            android:layout_toRightOf="@id/tv_wait_delivery_commodity_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_wait_delivery_commodity_num"
+            style="@style/commodityContent"
+            android:layout_alignLeft="@id/tv_wait_delivery_commodity_name"
+            android:layout_below="@id/tv_wait_delivery_commodity_name"
+            android:layout_centerVertical="true"
+            android:text="@string/commodity_num"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_et_wait_delivery_commodity_num"
+            style="@style/commodityContent"
+            android:layout_alignBottom="@id/tv_wait_delivery_commodity_num"
+            android:layout_toRightOf="@id/tv_wait_delivery_commodity_num"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_wait_delivery_commodity_Unum"
+            style="@style/commodityContent"
+            android:layout_alignLeft="@id/tv_wait_delivery_commodity_num"
+            android:layout_below="@id/tv_wait_delivery_commodity_num"
+            android:layout_centerVertical="true"
+            android:text="@string/commodity_Unum"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_et_wait_delivery_commodity_Unum"
+            style="@style/commodityContent"
+            android:layout_alignBottom="@id/tv_wait_delivery_commodity_Unum"
+            android:layout_toRightOf="@id/tv_wait_delivery_commodity_Unum"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_wait_delivery_commodity_divide"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_wait_delivery_commodity_Unum"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/btn_wait_delivery_commodity_divide" >
+
+            <TextView
+                android:id="@+id/tv_wait_deliveryremove"
+                style="@style/commodityContentOrder"
+                android:text="@string/remove" />
+
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#cccccc" />
+
+            <TextView
+                android:id="@+id/tv_wait_deliverycheck_subcodee"
+                style="@style/commodityContentOrder"
+                android:text="@string/check_subcode" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

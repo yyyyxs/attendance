@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fftupian" 
+  >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mainHead" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <include
+                    android:id="@+id/stockManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/main_item" />
+
+                <Button
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/vertical_lines" />
+
+                <include
+                    android:id="@+id/warehouseManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/main_item" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/line1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/linear1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/horizontal_lines" />
+
+            <Button
+                android:id="@+id/line2"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/line1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/horizontal_lines" />
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line2"
+                android:orientation="horizontal" >
+
+                <include
+                    android:id="@+id/stockSummaryReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    layout="@layout/main_item" />
+
+                <Button
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/vertical_lines" />
+
+                <include
+                    android:id="@+id/myCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    layout="@layout/main_item" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/line3"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/linear3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/horizontal_lines" />
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line3"
+                android:orientation="horizontal" >
+
+                <include
+                    android:id="@+id/repairDevice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    layout="@layout/main_item" />
+
+                <Button
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/vertical_lines" />
+
+                <include
+                    android:id="@+id/updateDevice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    layout="@layout/main_item" />
+            </LinearLayout>
+           
+              
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

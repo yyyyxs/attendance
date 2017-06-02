@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_frame"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_order1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_order_order_num"
+            style="@style/stockContent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/commodity_name" />
+
+        <TextView
+            android:id="@+id/tv_et_order_order_num"
+            style="@style/stockContent"
+            android:layout_alignBottom="@id/tv_order_order_num"
+            android:layout_toRightOf="@id/tv_order_order_num" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_order2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <TextView
+                android:id="@+id/tv_order_transactor_name"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/commodity_type" />
+
+            <TextView
+                android:id="@+id/tv_et_order_transactor_name"
+                style="@style/stockContent"
+                android:singleLine="true"
+                android:layout_alignBottom="@id/tv_order_transactor_name"
+                android:layout_toRightOf="@id/tv_order_transactor_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_order_sum"
+                style="@style/stockContent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/commodity_buy_num" />
+
+            <TextView
+                android:id="@+id/tv_et_order_sum"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_order_sum"
+                android:layout_toRightOf="@id/tv_order_sum" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_order3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_order_data"
+                style="@style/stockContent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/commodity_money" />
+
+            <TextView
+                android:id="@+id/tv_et_order_data"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_order_data"
+                android:layout_toRightOf="@id/tv_order_data" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_order_order_type"
+                style="@style/stockContent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/order_sum_money" />
+
+            <TextView
+                android:id="@+id/tv_et_order_order_type"
+                style="@style/stockContent"
+                android:layout_alignBottom="@id/tv_order_order_type"
+                android:layout_toRightOf="@id/tv_order_order_type" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

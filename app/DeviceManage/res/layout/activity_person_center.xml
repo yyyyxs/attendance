@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <LinearLayout
+        android:id="@+id/ll_personal_center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_per_info_look"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_perinfo_look"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/person_mesg_look" />
+
+            <TextView
+                android:id="@+id/tv_et_perinfo_look"
+                android:layout_toRightOf="@id/tv_site_name"
+                style="@style/mycenter_table_item_textview2"
+                 android:text="  "
+                 />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_account_manage"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_account_manage"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/account_manage" />
+
+            <TextView
+                android:id="@+id/tv_et_account_manage"
+                style="@style/mycenter_table_item_textview2" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rl_version_check"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_version_check"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/check_version" />
+
+            <TextView
+                android:id="@+id/tv_et_version_check"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#cccccc"
+                android:textSize="20sp" />
+            
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+        </LinearLayout>
+        </RelativeLayout>

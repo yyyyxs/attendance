@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/com/jmhz/devicemanage/http/HttpBase.java=UTF-8
+encoding//src/com/jmhz/devicemanage/manage/DeviceAuditReportActivity.java=UTF-8
+encoding//src/com/jmhz/devicemanage/manage/DeviceManageActivity.java=UTF-8
+encoding//src/com/jmhz/devicemanage/manage/DeviceUpdateAuditReportActivity.java=UTF-8
+encoding//src/com/jmhz/devicemanage/utils/JSONUtils.java=UTF-8
+encoding//src/com/jmhz/devicemanage/web/BaseBack.java=UTF-8
+encoding//src/com/jmhz/devicemanage/web/Device.java=UTF-8
+encoding//src/com/jmhz/devicemanage/web/ErrorCodeUtils.java=UTF-8
+encoding//src/com/jmhz/devicemanage/web/FaultApply.java=UTF-8
+encoding//src/com/jmhz/devicemanage/web/UpgradeBack.java=UTF-8
+encoding//src/com/jmhz/devicemanage/web/upgradeApply.java=UTF-8
+encoding//src/com/zxing/decoding/CaptureActivityHandler.java=UTF-8

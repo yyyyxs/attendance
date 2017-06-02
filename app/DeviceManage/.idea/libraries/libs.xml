@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/ZXing-javase-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/additionnal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/achartengine-1.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/BaiduLBS_Android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/ae-jaxb-2.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/locSDK_3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/UIDTraceAndroidSupport.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/txw2-20110809.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jaxp-datatype.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/istack-commons-runtime.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/ZXing-core-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

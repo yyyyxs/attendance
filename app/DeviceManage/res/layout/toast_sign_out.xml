@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#666666"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_frame"
+        android:layout_centerInParent="true"
+        android:background="@drawable/changepsdtoast"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_changepsd_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/stock_choose_sign_type"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#efeff4" />
+
+        <RelativeLayout
+            android:id="@+id/rl_delivery_out"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/ibtn_delivery_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_select__on_off" />
+
+            <TextView
+                android:id="@+id/tv_delivery_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/ibtn_delivery_out"
+                android:gravity="center_horizontal"
+                android:text="@string/delivery_out"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_return_out"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/ibtn_return_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_select__on_off" />
+
+            <TextView
+                android:id="@+id/tv_return_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/ibtn_return_out"
+                android:gravity="center_horizontal"
+                android:text="@string/return_out"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+	<Button 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_dialog_close"
+        android:layout_toRightOf="@id/main_frame"
+        android:background="@drawable/close_button_on_off"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+	    />
+</RelativeLayout>

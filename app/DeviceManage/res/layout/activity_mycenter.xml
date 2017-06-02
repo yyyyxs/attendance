@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/head_item" />
+
+    <LinearLayout
+        android:id="@+id/ll_personal_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainHead"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_site_name"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_site_name"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/site_name" />
+
+            <TextView
+                android:id="@+id/tv_et_site_name"
+                android:layout_toRightOf="@id/tv_site_name"
+                style="@style/mycenter_table_item_textview2"
+                 />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_contacts_name"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_contacts_name"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/contacts_name" />
+
+            <TextView
+                android:id="@+id/tv_et_contacts_name"
+                style="@style/mycenter_table_item_textview2" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_site_address"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_site_address"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/site_address" />
+
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/personal_mark_address"
+                android:text="@string/mark_address"
+                android:textColor="#efeff4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_et_site_address"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btn_map"
+                android:gravity="center"
+                android:textColor="#cccccc"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_telnumber"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_telnumber"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/telnumber" />
+
+            <TextView
+                android:id="@+id/tv_et_telnumber"
+                style="@style/mycenter_table_item_textview2" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/tv_et_email"
+                style="@style/mycenter_table_item_textview2" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_change_psd"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_change_psd"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/change_psd" />
+
+            <TextView
+                android:id="@+id/tv_et_change_psd"
+                style="@style/mycenter_table_item_textview2"
+                android:text="" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/horizontal_lines" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_check_version"
+            style="@style/mycenter_table_item" >
+
+            <TextView
+                android:id="@+id/tv_check_version"
+                style="@style/mycenter_table_item_textview"
+                android:text="@string/check_version" />
+
+            <TextView
+                android:id="@+id/tv_et_check_version"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#cccccc"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/bigButton"
+        android:layout_below="@id/ll_personal_msg"
+        android:text="@string/submit" />
+
+</RelativeLayout>
