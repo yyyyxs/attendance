@@ -1,7 +1,7 @@
 package com.jmhz.devicemanage.http;
 
 public interface HttpBaseUrl {
-	public static final String SERVER_URL = "http://59.77.236.53:8090/device/";
+	public static final String SERVER_URL = "http://59.77.135.245:8080/device/";
 	public static final String DEVICE_BASE_URL = SERVER_URL + "mobiledevicemg/";
 	public static final String FAULT_BASE_URL = SERVER_URL + "mobilefault/";
 	public static final String UPGRADE_BASE_URL = SERVER_URL + "mobileupgrade/";
